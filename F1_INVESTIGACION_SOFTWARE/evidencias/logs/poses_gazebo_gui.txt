@@ -1,0 +1,4 @@
+suelo x: 5 y: 4
+muros 
+mesa1 x: 7.5 y: 6
+silla1 x: 7.5 y: 5.2

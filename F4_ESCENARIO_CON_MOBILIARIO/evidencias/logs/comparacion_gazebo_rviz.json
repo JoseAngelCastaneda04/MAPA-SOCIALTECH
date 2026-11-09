@@ -1,0 +1,277 @@
+{
+ "poses": [
+  {
+   "id": "mesa_1",
+   "gazebo_xy_yaw": [
+    8.9,
+    -4.9,
+    0.0
+   ],
+   "yaml_xy_yaw": [
+    8.9,
+    -4.9,
+    0
+   ],
+   "error_xy_m": 0.0,
+   "error_yaw_deg": 0.0
+  },
+  {
+   "id": "mesa_2",
+   "gazebo_xy_yaw": [
+    8.9,
+    -6.35,
+    90.0
+   ],
+   "yaml_xy_yaw": [
+    8.9,
+    -6.35,
+    90
+   ],
+   "error_xy_m": 0.0,
+   "error_yaw_deg": 0.0
+  },
+  {
+   "id": "silla_N",
+   "gazebo_xy_yaw": [
+    8.9,
+    -4.15,
+    0.0
+   ],
+   "yaml_xy_yaw": [
+    8.9,
+    -4.15,
+    0
+   ],
+   "error_xy_m": 0.0,
+   "error_yaw_deg": 0.0
+  },
+  {
+   "id": "silla_S",
+   "gazebo_xy_yaw": [
+    8.9,
+    -5.65,
+    -180.0
+   ],
+   "yaml_xy_yaw": [
+    8.9,
+    -5.65,
+    180
+   ],
+   "error_xy_m": 0.0,
+   "error_yaw_deg": 0.0
+  },
+  {
+   "id": "silla_W",
+   "gazebo_xy_yaw": [
+    7.75,
+    -4.9,
+    90.0
+   ],
+   "yaml_xy_yaw": [
+    7.75,
+    -4.9,
+    90
+   ],
+   "error_xy_m": 0.0,
+   "error_yaw_deg": 0.0
+  },
+  {
+   "id": "silla_E",
+   "gazebo_xy_yaw": [
+    10.05,
+    -4.9,
+    -90.0
+   ],
+   "yaml_xy_yaw": [
+    10.05,
+    -4.9,
+    -90
+   ],
+   "error_xy_m": 0.0,
+   "error_yaw_deg": 0.0
+  },
+  {
+   "id": "caja_1",
+   "gazebo_xy_yaw": [
+    10.2,
+    -6.3,
+    0.0
+   ],
+   "yaml_xy_yaw": [
+    10.2,
+    -6.3,
+    0
+   ],
+   "error_xy_m": 0.0,
+   "error_yaw_deg": 0.0
+  },
+  {
+   "id": "papelera_1",
+   "gazebo_xy_yaw": [
+    7.55,
+    -6.45,
+    0.0
+   ],
+   "yaml_xy_yaw": [
+    7.55,
+    -6.45,
+    0
+   ],
+   "error_xy_m": 0.0,
+   "error_yaw_deg": 0.0
+  }
+ ],
+ "map": {
+  "resolucion": 0.009999999776482582,
+  "origen": [
+   4.7299,
+   -11.32
+  ],
+  "tamano": [
+   1350,
+   1179
+  ],
+  "frame": "map",
+  "celdas_distintas_vs_pgm": 0,
+  "celdas_ocupadas": 138721,
+  "paredes_base_liberadas_en_topic": 0
+ },
+ "huellas": [
+  {
+   "id": "mesa_1",
+   "bbox_esperada_gazebo_m": [
+    8.03,
+    -5.3,
+    9.78,
+    -4.51
+   ],
+   "bbox_en_map_m": [
+    8.03,
+    -5.29,
+    9.77,
+    -4.51
+   ],
+   "error_bbox_max_m": 0.01,
+   "error_centro_bbox_m": 0.0071
+  },
+  {
+   "id": "mesa_2",
+   "bbox_esperada_gazebo_m": [
+    7.93,
+    -6.61,
+    9.88,
+    -6.1
+   ],
+   "bbox_en_map_m": [
+    7.92,
+    -6.61,
+    9.88,
+    -6.09
+   ],
+   "error_bbox_max_m": 0.01,
+   "error_centro_bbox_m": 0.0071
+  },
+  {
+   "id": "silla_N",
+   "bbox_esperada_gazebo_m": [
+    8.68,
+    -4.42,
+    9.13,
+    -3.88
+   ],
+   "bbox_en_map_m": [
+    8.67,
+    -4.41,
+    9.13,
+    -3.88
+   ],
+   "error_bbox_max_m": 0.01,
+   "error_centro_bbox_m": 0.0071
+  },
+  {
+   "id": "silla_S",
+   "bbox_esperada_gazebo_m": [
+    8.68,
+    -5.92,
+    9.13,
+    -5.39
+   ],
+   "bbox_en_map_m": [
+    8.67,
+    -5.92,
+    9.13,
+    -5.39
+   ],
+   "error_bbox_max_m": 0.01,
+   "error_centro_bbox_m": 0.005
+  },
+  {
+   "id": "silla_W",
+   "bbox_esperada_gazebo_m": [
+    7.49,
+    -5.13,
+    8.02,
+    -4.68
+   ],
+   "bbox_en_map_m": [
+    7.48,
+    -5.13,
+    8.01,
+    -4.67
+   ],
+   "error_bbox_max_m": 0.01,
+   "error_centro_bbox_m": 0.0112
+  },
+  {
+   "id": "silla_E",
+   "bbox_esperada_gazebo_m": [
+    9.79,
+    -5.13,
+    10.33,
+    -4.68
+   ],
+   "bbox_en_map_m": [
+    9.79,
+    -5.13,
+    10.32,
+    -4.67
+   ],
+   "error_bbox_max_m": 0.01,
+   "error_centro_bbox_m": 0.0071
+  },
+  {
+   "id": "caja_1",
+   "bbox_esperada_gazebo_m": [
+    10.0,
+    -6.51,
+    10.41,
+    -6.1
+   ],
+   "bbox_en_map_m": [
+    10.0,
+    -6.5,
+    10.41,
+    -6.09
+   ],
+   "error_bbox_max_m": 0.01,
+   "error_centro_bbox_m": 0.01
+  },
+  {
+   "id": "papelera_1",
+   "bbox_esperada_gazebo_m": [
+    7.35,
+    -6.66,
+    7.76,
+    -6.25
+   ],
+   "bbox_en_map_m": [
+    7.35,
+    -6.66,
+    7.76,
+    -6.24
+   ],
+   "error_bbox_max_m": 0.01,
+   "error_centro_bbox_m": 0.005
+  }
+ ]
+}

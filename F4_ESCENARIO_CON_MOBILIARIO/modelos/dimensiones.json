@@ -1,0 +1,94 @@
+{
+ "mesa1": {
+  "origen": "SocialTech-Gazebo/models/table1/meshes/mesa1.obj",
+  "triangulos": 10054,
+  "dimensiones_xyz_m": [
+   1.736,
+   0.774,
+   0.7962
+  ],
+  "huella_original_min_xy": [
+   0.0,
+   0.0
+  ],
+  "desplazamiento_aplicado_xyz": [
+   -0.868,
+   -0.387,
+   -0.0
+  ],
+  "colision": "malla"
+ },
+ "mesa2": {
+  "origen": "SocialTech-Gazebo/models/table2/meshes/mesa2.obj",
+  "triangulos": 4554,
+  "dimensiones_xyz_m": [
+   0.502,
+   1.948,
+   0.7395
+  ],
+  "huella_original_min_xy": [
+   0.0,
+   0.0
+  ],
+  "desplazamiento_aplicado_xyz": [
+   -0.251,
+   -0.974,
+   -0.0
+  ],
+  "colision": "malla"
+ },
+ "silla_malla": {
+  "origen": "SocialTech-Gazebo/models/chair/meshes/silla.obj",
+  "triangulos": 155001,
+  "dimensiones_xyz_m": [
+   0.4806,
+   0.5227,
+   0.8378
+  ],
+  "huella_original_min_xy": [
+   -0.2403,
+   -0.2579
+  ],
+  "desplazamiento_aplicado_xyz": [
+   -0.0,
+   -0.00345,
+   1e-05
+  ],
+  "colision": "malla"
+ },
+ "silla": {
+  "origen": "SocialTech-Gazebo/models/chair/meshes/silla.obj",
+  "triangulos": 155001,
+  "dimensiones_xyz_m": [
+   0.4806,
+   0.5227,
+   0.8378
+  ],
+  "huella_original_min_xy": [
+   -0.2403,
+   -0.2579
+  ],
+  "desplazamiento_aplicado_xyz": [
+   -0.0,
+   -0.00345,
+   1e-05
+  ],
+  "colision": "simple"
+ },
+ "caja": {
+  "origen": "propio de F4",
+  "dimensiones_xyz_m": [
+   0.4,
+   0.4,
+   0.5
+  ]
+ },
+ "papelera": {
+  "origen": "propio de F4",
+  "dimensiones_xyz_m": [
+   0.4,
+   0.4,
+   0.6
+  ]
+ }
+}

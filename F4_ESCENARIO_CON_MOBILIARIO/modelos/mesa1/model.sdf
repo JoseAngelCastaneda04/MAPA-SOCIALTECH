@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- F4: copia de SocialTech-Gazebo/models/table1 (original sin modificar). Origen = centro de la huella, z=0 = suelo.
+     Dimensiones medidas de la malla: 1.7360 x 0.7740 x 0.7962 m (X x Y x Z a yaw 0). Colision: malla. -->
+<sdf version="1.9">
+  <model name="mesa1">
+    <static>true</static>
+    <link name="link">
+      <visual name="vis"><pose>-0.86800 -0.38700 -0.00000 1.570796 0 0</pose><geometry><mesh><uri>meshes/mesa1.obj</uri></mesh></geometry></visual>
+      <collision name="col"><pose>-0.86800 -0.38700 -0.00000 1.570796 0 0</pose><geometry><mesh><uri>meshes/mesa1.obj</uri></mesh></geometry></collision>
+    </link>
+  </model>
+</sdf>

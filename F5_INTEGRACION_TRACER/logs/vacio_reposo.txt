@@ -1,0 +1,4 @@
+tracer x=0.000000 y=-0.000000 z=-0.000000
+left_wheel_link x=0.000000 y=0.170000 z=0.060500
+right_wheel_link x=0.000000 y=-0.170000 z=0.060500
+pitch_deg=-0.0573 roll_deg=0.0000

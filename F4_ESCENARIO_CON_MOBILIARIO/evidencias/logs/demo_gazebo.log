@@ -1,0 +1,12 @@
+libEGL warning: pci id for fd 94: 10de:25a0, driver (null)
+
+pci id for fd 95: 10de:25a0, driver (null)
+pci id for fd 96: 10de:25a0, driver (null)
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: pci id for fd 94: 10de:25a0, driver (null)
+
+pci id for fd 95: 10de:25a0, driver (null)
+pci id for fd 96: 10de:25a0, driver (null)
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: pci id for fd 94: 10de:25a0, driver (null)
+

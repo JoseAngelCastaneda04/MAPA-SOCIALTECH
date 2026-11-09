@@ -1,0 +1,419 @@
+== mapa: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml  muestreo: 180s  2026-11-08T11:23:28+01:00
+[INFO] [1794133408.445294612] [map_server]: 
+	map_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794133408.445362454] [map_server]: Creating
+RSS servidor sin cargar: 37752 kB
+[INFO] [1794133412.157097380] [map_server]: Configuring
+[INFO] [1794133412.157215457] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133412.157505223] [map_io]: resolution: 0.01
+[INFO] [1794133412.157520590] [map_io]: origin[0]: 4.7299
+[INFO] [1794133412.157528503] [map_io]: origin[1]: -11.32
+[INFO] [1794133412.157533138] [map_io]: origin[2]: 0
+[INFO] [1794133412.157537962] [map_io]: free_thresh: 0.196
+[INFO] [1794133412.157542310] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133412.157548364] [map_io]: mode: trinary
+[INFO] [1794133412.157554286] [map_io]: negate: 0
+[INFO] [1794133412.157760072] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133412.179463629] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+configure (carga PGM+YAML): 1041 ms (incluye ~0,5 s de arranque de la CLI ros2)
+RSS tras configure: 44980 kB
+[INFO] [1794133413.198321221] [map_server]: Activating
+[INFO] [1794133413.199556837] [map_server]: Creating bond (map_server) to lifecycle manager.
+activate: 1006 ms
+estado: active [3]
+suscriptor tardío (transient_local): recibido en 0.177 s: 1350x1179 res 0.009999999776482582 origen (4.7299,-11.32) frame map
+RSS rviz2 a los 10 s: 195884 kB
+muestras (t_s, CPU_rviz_%, CPU_srv_%, RSS_rviz_kB, RSS_srv_kB):
+5  6.5  0.6 195884 48384
+10  6.1  0.5 195884 48384
+15  5.8  0.4 195884 48384
+20  5.8  0.4 195884 48384
+25  5.6  0.3 195476 48384
+30  5.6  0.3 195476 48384
+35  5.4  0.3 195476 48384
+40  5.3  0.2 195476 48384
+45  5.3  0.2 195476 48384
+50  5.3  0.2 195476 48384
+55  5.3  0.2 195476 48384
+60  5.2  0.2 195476 48384
+65  5.2  0.2 195476 48384
+70  5.1  0.2 195476 48384
+75  5.1  0.2 195476 48384
+80  5.1  0.1 195476 48384
+85  5.1  0.1 195476 48384
+90  5.1  0.1 195476 48384
+95  5.1  0.1 195476 48384
+100  5.1  0.1 195476 48384
+105  5.1  0.1 195476 48384
+110  5.1  0.1 195476 48384
+115  5.1  0.1 195476 48384
+120  5.1  0.1 195476 48384
+125  5.1  0.1 195476 48384
+130  5.0  0.1 195476 48384
+135  5.0  0.1 195476 48384
+140  5.0  0.1 195476 48384
+145  5.0  0.1 195476 48384
+150  5.0  0.1 195476 48384
+155  5.0  0.1 195476 48384
+160  5.0  0.1 195476 48384
+165  5.0  0.1 195476 48384
+170  5.0  0.1 195476 48384
+175  5.0  0.1 195476 48384
+180  5.0  0.1 195476 48384
+ok evidencias/logs/rendimiento_1cm_rviz.png (1500x1000+100+80, ventana 37748998)
+errores/avisos de rviz2 (excluye el de GLSL, ya documentado):
+  ninguno
+GLSL: 2 mención(es)
+-- 20 ciclos deactivate/cleanup/configure/activate
+[INFO] [1794133609.147034810] [map_server]: Deactivating
+[INFO] [1794133609.147119435] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133610.167727344] [map_server]: Cleaning up
+[INFO] [1794133611.173398588] [map_server]: Configuring
+[INFO] [1794133611.173503802] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133611.173655518] [map_io]: resolution: 0.01
+[INFO] [1794133611.173667633] [map_io]: origin[0]: 4.7299
+[INFO] [1794133611.173675759] [map_io]: origin[1]: -11.32
+[INFO] [1794133611.173681540] [map_io]: origin[2]: 0
+[INFO] [1794133611.173687250] [map_io]: free_thresh: 0.196
+[INFO] [1794133611.173692901] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133611.173697851] [map_io]: mode: trinary
+[INFO] [1794133611.173703333] [map_io]: negate: 0
+[INFO] [1794133611.173720584] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133611.197221460] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133612.181450251] [map_server]: Activating
+[INFO] [1794133612.181809440] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133613.171073113] [map_server]: Deactivating
+[INFO] [1794133613.171118765] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133614.201027783] [map_server]: Cleaning up
+[INFO] [1794133615.186680250] [map_server]: Configuring
+[INFO] [1794133615.186763688] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133615.186926060] [map_io]: resolution: 0.01
+[INFO] [1794133615.186935839] [map_io]: origin[0]: 4.7299
+[INFO] [1794133615.186941527] [map_io]: origin[1]: -11.32
+[INFO] [1794133615.186946146] [map_io]: origin[2]: 0
+[INFO] [1794133615.186950635] [map_io]: free_thresh: 0.196
+[INFO] [1794133615.186955146] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133615.186959130] [map_io]: mode: trinary
+[INFO] [1794133615.186964651] [map_io]: negate: 0
+[INFO] [1794133615.186976696] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133615.197097177] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133616.201466685] [map_server]: Activating
+[INFO] [1794133616.201935789] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133617.222849817] [map_server]: Deactivating
+[INFO] [1794133617.222935742] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133618.250313200] [map_server]: Cleaning up
+[INFO] [1794133619.255859908] [map_server]: Configuring
+[INFO] [1794133619.255957423] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133619.256157623] [map_io]: resolution: 0.01
+[INFO] [1794133619.256171150] [map_io]: origin[0]: 4.7299
+[INFO] [1794133619.256180447] [map_io]: origin[1]: -11.32
+[INFO] [1794133619.256186879] [map_io]: origin[2]: 0
+[INFO] [1794133619.256193385] [map_io]: free_thresh: 0.196
+[INFO] [1794133619.256199445] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133619.256205387] [map_io]: mode: trinary
+[INFO] [1794133619.256211772] [map_io]: negate: 0
+[INFO] [1794133619.256228868] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133619.271075635] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133620.277147882] [map_server]: Activating
+[INFO] [1794133620.277437504] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133621.277477372] [map_server]: Deactivating
+[INFO] [1794133621.277574795] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133622.291653786] [map_server]: Cleaning up
+[INFO] [1794133623.294480562] [map_server]: Configuring
+[INFO] [1794133623.294546118] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133623.294696359] [map_io]: resolution: 0.01
+[INFO] [1794133623.294705188] [map_io]: origin[0]: 4.7299
+[INFO] [1794133623.294711029] [map_io]: origin[1]: -11.32
+[INFO] [1794133623.294717437] [map_io]: origin[2]: 0
+[INFO] [1794133623.294722098] [map_io]: free_thresh: 0.196
+[INFO] [1794133623.294726392] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133623.294731449] [map_io]: mode: trinary
+[INFO] [1794133623.294736394] [map_io]: negate: 0
+[INFO] [1794133623.294749644] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133623.309304807] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133624.330490967] [map_server]: Activating
+[INFO] [1794133624.331002785] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133625.339817640] [map_server]: Deactivating
+[INFO] [1794133625.339896878] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133626.361866598] [map_server]: Cleaning up
+[INFO] [1794133627.366453779] [map_server]: Configuring
+[INFO] [1794133627.366574579] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133627.366835650] [map_io]: resolution: 0.01
+[INFO] [1794133627.366849024] [map_io]: origin[0]: 4.7299
+[INFO] [1794133627.366857916] [map_io]: origin[1]: -11.32
+[INFO] [1794133627.366863851] [map_io]: origin[2]: 0
+[INFO] [1794133627.366870163] [map_io]: free_thresh: 0.196
+[INFO] [1794133627.366876144] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133627.366881784] [map_io]: mode: trinary
+[INFO] [1794133627.366889480] [map_io]: negate: 0
+[INFO] [1794133627.366909585] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133627.379670610] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133628.390260839] [map_server]: Activating
+[INFO] [1794133628.390683313] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133629.387172015] [map_server]: Deactivating
+[INFO] [1794133629.387257617] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133630.406619636] [map_server]: Cleaning up
+[INFO] [1794133631.427471511] [map_server]: Configuring
+[INFO] [1794133631.427544766] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133631.427708120] [map_io]: resolution: 0.01
+[INFO] [1794133631.427717391] [map_io]: origin[0]: 4.7299
+[INFO] [1794133631.427723521] [map_io]: origin[1]: -11.32
+[INFO] [1794133631.427727728] [map_io]: origin[2]: 0
+[INFO] [1794133631.427732072] [map_io]: free_thresh: 0.196
+[INFO] [1794133631.427736034] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133631.427740275] [map_io]: mode: trinary
+[INFO] [1794133631.427745298] [map_io]: negate: 0
+[INFO] [1794133631.427764912] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133631.443246191] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133632.446659453] [map_server]: Activating
+[INFO] [1794133632.446948609] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133633.458183960] [map_server]: Deactivating
+[INFO] [1794133633.458276992] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133634.481718290] [map_server]: Cleaning up
+[INFO] [1794133635.471327232] [map_server]: Configuring
+[INFO] [1794133635.471400170] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133635.471577852] [map_io]: resolution: 0.01
+[INFO] [1794133635.471586819] [map_io]: origin[0]: 4.7299
+[INFO] [1794133635.471593747] [map_io]: origin[1]: -11.32
+[INFO] [1794133635.471598392] [map_io]: origin[2]: 0
+[INFO] [1794133635.471603294] [map_io]: free_thresh: 0.196
+[INFO] [1794133635.471607441] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133635.471611610] [map_io]: mode: trinary
+[INFO] [1794133635.471616572] [map_io]: negate: 0
+[INFO] [1794133635.471630091] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133635.482303992] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133636.491001120] [map_server]: Activating
+[INFO] [1794133636.491593808] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133637.478396444] [map_server]: Deactivating
+[INFO] [1794133637.478470746] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133638.543199033] [map_server]: Cleaning up
+[INFO] [1794133639.554223192] [map_server]: Configuring
+[INFO] [1794133639.554309908] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133639.554427276] [map_io]: resolution: 0.01
+[INFO] [1794133639.554432206] [map_io]: origin[0]: 4.7299
+[INFO] [1794133639.554435531] [map_io]: origin[1]: -11.32
+[INFO] [1794133639.554437953] [map_io]: origin[2]: 0
+[INFO] [1794133639.554440458] [map_io]: free_thresh: 0.196
+[INFO] [1794133639.554442809] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133639.554445062] [map_io]: mode: trinary
+[INFO] [1794133639.554447969] [map_io]: negate: 0
+[INFO] [1794133639.554456510] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133639.563061580] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133640.601851300] [map_server]: Activating
+[INFO] [1794133640.602357883] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133641.610041355] [map_server]: Deactivating
+[INFO] [1794133641.610084586] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133642.619563169] [map_server]: Cleaning up
+[INFO] [1794133643.623344589] [map_server]: Configuring
+[INFO] [1794133643.623419114] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133643.623627891] [map_io]: resolution: 0.01
+[INFO] [1794133643.623645402] [map_io]: origin[0]: 4.7299
+[INFO] [1794133643.623654006] [map_io]: origin[1]: -11.32
+[INFO] [1794133643.623660446] [map_io]: origin[2]: 0
+[INFO] [1794133643.623666901] [map_io]: free_thresh: 0.196
+[INFO] [1794133643.623673104] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133643.623679009] [map_io]: mode: trinary
+[INFO] [1794133643.623685340] [map_io]: negate: 0
+[INFO] [1794133643.623703567] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133643.635968630] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133644.640734131] [map_server]: Activating
+[INFO] [1794133644.641406362] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133645.676129954] [map_server]: Deactivating
+[INFO] [1794133645.676181722] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133646.685079560] [map_server]: Cleaning up
+[INFO] [1794133647.728580158] [map_server]: Configuring
+[INFO] [1794133647.728637923] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133647.728765563] [map_io]: resolution: 0.01
+[INFO] [1794133647.728772632] [map_io]: origin[0]: 4.7299
+[INFO] [1794133647.728777021] [map_io]: origin[1]: -11.32
+[INFO] [1794133647.728780423] [map_io]: origin[2]: 0
+[INFO] [1794133647.728783873] [map_io]: free_thresh: 0.196
+[INFO] [1794133647.728787642] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133647.728790810] [map_io]: mode: trinary
+[INFO] [1794133647.728794971] [map_io]: negate: 0
+[INFO] [1794133647.728806705] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133647.737467001] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133648.752020059] [map_server]: Activating
+[INFO] [1794133648.752550853] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133649.757608674] [map_server]: Deactivating
+[INFO] [1794133649.757676927] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133650.784968503] [map_server]: Cleaning up
+[INFO] [1794133651.775028565] [map_server]: Configuring
+[INFO] [1794133651.775079902] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133651.775197230] [map_io]: resolution: 0.01
+[INFO] [1794133651.775203548] [map_io]: origin[0]: 4.7299
+[INFO] [1794133651.775207928] [map_io]: origin[1]: -11.32
+[INFO] [1794133651.775227062] [map_io]: origin[2]: 0
+[INFO] [1794133651.775235049] [map_io]: free_thresh: 0.196
+[INFO] [1794133651.775238266] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133651.775240903] [map_io]: mode: trinary
+[INFO] [1794133651.775243704] [map_io]: negate: 0
+[INFO] [1794133651.775253287] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133651.783204866] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133652.777530135] [map_server]: Activating
+[INFO] [1794133652.777888600] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133653.770093794] [map_server]: Deactivating
+[INFO] [1794133653.770147795] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133654.789228957] [map_server]: Cleaning up
+[INFO] [1794133655.790833918] [map_server]: Configuring
+[INFO] [1794133655.790909743] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133655.791037484] [map_io]: resolution: 0.01
+[INFO] [1794133655.791043079] [map_io]: origin[0]: 4.7299
+[INFO] [1794133655.791046703] [map_io]: origin[1]: -11.32
+[INFO] [1794133655.791049317] [map_io]: origin[2]: 0
+[INFO] [1794133655.791051975] [map_io]: free_thresh: 0.196
+[INFO] [1794133655.791054389] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133655.791058177] [map_io]: mode: trinary
+[INFO] [1794133655.791075900] [map_io]: negate: 0
+[INFO] [1794133655.791084845] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133655.799248406] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133656.794217825] [map_server]: Activating
+[INFO] [1794133656.794508226] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133657.798471326] [map_server]: Deactivating
+[INFO] [1794133657.798514790] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133658.800086458] [map_server]: Cleaning up
+[INFO] [1794133659.800436541] [map_server]: Configuring
+[INFO] [1794133659.800524094] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133659.800641003] [map_io]: resolution: 0.01
+[INFO] [1794133659.800646250] [map_io]: origin[0]: 4.7299
+[INFO] [1794133659.800650401] [map_io]: origin[1]: -11.32
+[INFO] [1794133659.800653253] [map_io]: origin[2]: 0
+[INFO] [1794133659.800655953] [map_io]: free_thresh: 0.196
+[INFO] [1794133659.800658561] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133659.800660930] [map_io]: mode: trinary
+[INFO] [1794133659.800664109] [map_io]: negate: 0
+[INFO] [1794133659.800673777] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133659.809175677] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133660.813404419] [map_server]: Activating
+[INFO] [1794133660.813835233] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133661.819796576] [map_server]: Deactivating
+[INFO] [1794133661.819871455] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133662.839716250] [map_server]: Cleaning up
+[INFO] [1794133663.845368741] [map_server]: Configuring
+[INFO] [1794133663.845441606] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133663.845609389] [map_io]: resolution: 0.01
+[INFO] [1794133663.845622623] [map_io]: origin[0]: 4.7299
+[INFO] [1794133663.845632982] [map_io]: origin[1]: -11.32
+[INFO] [1794133663.845641924] [map_io]: origin[2]: 0
+[INFO] [1794133663.845649051] [map_io]: free_thresh: 0.196
+[INFO] [1794133663.845656580] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133663.845664419] [map_io]: mode: trinary
+[INFO] [1794133663.845686337] [map_io]: negate: 0
+[INFO] [1794133663.845706185] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133663.858975692] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133664.881154367] [map_server]: Activating
+[INFO] [1794133664.881609510] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133665.882953375] [map_server]: Deactivating
+[INFO] [1794133665.883036111] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133666.888564708] [map_server]: Cleaning up
+[INFO] [1794133667.894525850] [map_server]: Configuring
+[INFO] [1794133667.894604062] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133667.894792058] [map_io]: resolution: 0.01
+[INFO] [1794133667.894803526] [map_io]: origin[0]: 4.7299
+[INFO] [1794133667.894812032] [map_io]: origin[1]: -11.32
+[INFO] [1794133667.894817303] [map_io]: origin[2]: 0
+[INFO] [1794133667.894822730] [map_io]: free_thresh: 0.196
+[INFO] [1794133667.894827764] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133667.894832807] [map_io]: mode: trinary
+[INFO] [1794133667.894838348] [map_io]: negate: 0
+[INFO] [1794133667.894853751] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133667.908727607] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133668.926991441] [map_server]: Activating
+[INFO] [1794133668.927374030] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133669.934862573] [map_server]: Deactivating
+[INFO] [1794133669.934910724] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133670.966636833] [map_server]: Cleaning up
+[INFO] [1794133672.000417089] [map_server]: Configuring
+[INFO] [1794133672.000481631] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133672.000627473] [map_io]: resolution: 0.01
+[INFO] [1794133672.000636484] [map_io]: origin[0]: 4.7299
+[INFO] [1794133672.000641695] [map_io]: origin[1]: -11.32
+[INFO] [1794133672.000645465] [map_io]: origin[2]: 0
+[INFO] [1794133672.000649452] [map_io]: free_thresh: 0.196
+[INFO] [1794133672.000653119] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133672.000656599] [map_io]: mode: trinary
+[INFO] [1794133672.000660370] [map_io]: negate: 0
+[INFO] [1794133672.000672624] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133672.013393637] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133672.994804843] [map_server]: Activating
+[INFO] [1794133672.995216302] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133673.994128141] [map_server]: Deactivating
+[INFO] [1794133673.994182686] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133675.011034372] [map_server]: Cleaning up
+[INFO] [1794133676.018677710] [map_server]: Configuring
+[INFO] [1794133676.018766785] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133676.018971437] [map_io]: resolution: 0.01
+[INFO] [1794133676.018983325] [map_io]: origin[0]: 4.7299
+[INFO] [1794133676.018998889] [map_io]: origin[1]: -11.32
+[INFO] [1794133676.019005175] [map_io]: origin[2]: 0
+[INFO] [1794133676.019011675] [map_io]: free_thresh: 0.196
+[INFO] [1794133676.019017416] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133676.019022844] [map_io]: mode: trinary
+[INFO] [1794133676.019029220] [map_io]: negate: 0
+[INFO] [1794133676.019046601] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133676.030134147] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133677.040193381] [map_server]: Activating
+[INFO] [1794133677.040688798] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133678.040457710] [map_server]: Deactivating
+[INFO] [1794133678.040502391] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133679.055051224] [map_server]: Cleaning up
+[INFO] [1794133680.047643571] [map_server]: Configuring
+[INFO] [1794133680.047717921] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133680.047878280] [map_io]: resolution: 0.01
+[INFO] [1794133680.047887873] [map_io]: origin[0]: 4.7299
+[INFO] [1794133680.047892857] [map_io]: origin[1]: -11.32
+[INFO] [1794133680.047896432] [map_io]: origin[2]: 0
+[INFO] [1794133680.047899905] [map_io]: free_thresh: 0.196
+[INFO] [1794133680.047902995] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133680.047905947] [map_io]: mode: trinary
+[INFO] [1794133680.047909203] [map_io]: negate: 0
+[INFO] [1794133680.047919289] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133680.057746822] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133681.101065384] [map_server]: Activating
+[INFO] [1794133681.101550564] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133682.123615045] [map_server]: Deactivating
+[INFO] [1794133682.123667485] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133683.122788273] [map_server]: Cleaning up
+[INFO] [1794133684.126403062] [map_server]: Configuring
+[INFO] [1794133684.126472806] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133684.126644843] [map_io]: resolution: 0.01
+[INFO] [1794133684.126654623] [map_io]: origin[0]: 4.7299
+[INFO] [1794133684.126661554] [map_io]: origin[1]: -11.32
+[INFO] [1794133684.126666838] [map_io]: origin[2]: 0
+[INFO] [1794133684.126672244] [map_io]: free_thresh: 0.196
+[INFO] [1794133684.126677268] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133684.126682208] [map_io]: mode: trinary
+[INFO] [1794133684.126688209] [map_io]: negate: 0
+[INFO] [1794133684.126711828] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133684.140395898] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133685.142534731] [map_server]: Activating
+[INFO] [1794133685.143312559] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794133686.215668832] [map_server]: Deactivating
+[INFO] [1794133686.215745071] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133687.213222605] [map_server]: Cleaning up
+[INFO] [1794133688.203487166] [map_server]: Configuring
+[INFO] [1794133688.203580078] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794133688.203798973] [map_io]: resolution: 0.01
+[INFO] [1794133688.203813366] [map_io]: origin[0]: 4.7299
+[INFO] [1794133688.203822109] [map_io]: origin[1]: -11.32
+[INFO] [1794133688.203830753] [map_io]: origin[2]: 0
+[INFO] [1794133688.203838492] [map_io]: free_thresh: 0.196
+[INFO] [1794133688.203844879] [map_io]: occupied_thresh: 0.65
+[INFO] [1794133688.203851273] [map_io]: mode: trinary
+[INFO] [1794133688.203858529] [map_io]: negate: 0
+[INFO] [1794133688.203877657] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794133688.220149528] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794133689.239622737] [map_server]: Activating
+[INFO] [1794133689.240080059] [map_server]: Creating bond (map_server) to lifecycle manager.
+20 ciclos en 81100 ms; estado final: active [3]; RSS final: 72672 kB
+tras ciclos: recibido en 0.175 s: 1350x1179 res 0.009999999776482582 origen (4.7299,-11.32) frame map
+[INFO] [1794133691.974138323] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1794133691.974228948] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+fin 2026-11-08T11:28:11+01:00
+[INFO] [1794133691.984522622] [map_server]: Deactivating
+[INFO] [1794133691.984545946] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133691.994769976] [map_server]: Cleaning up
+[INFO] [1794133691.994841242] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133691.996862795] [map_server]: Destroying

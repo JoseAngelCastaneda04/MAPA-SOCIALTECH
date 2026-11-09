@@ -1,0 +1,105 @@
+{
+ "A": {
+  "prueba": "A: teleop_twist_keyboard real, tecla i 2 s a 20 Hz, proceso muerto con SIGKILL sin pulsar k",
+  "comando": "v=0,3 m/s (tecla i)",
+  "n_ordenes_recibidas": 40,
+  "t_ultima_orden_s": 72.49300000000001,
+  "vel_real_en_ultima_orden_m_s": 0.29999978057260807,
+  "t_watchdog_cero_s": 0.5069999999999908,
+  "t_hasta_parada_s": 0.556999999999988,
+  "desplazamiento_desde_ultima_orden_hasta_parada_m": 0.15781867504324154,
+  "desplazamiento_posterior_a_la_parada_m": 1.8999292805688128e-08,
+  "vel_real_final_m_s": 0.0,
+  "ultima_orden_en_seguro": [
+   0.0,
+   0.0
+  ],
+  "watchdog_publicando_hasta_el_final": true,
+  "resultado": "PARA AUTOMATICAMENTE"
+ },
+ "B1": {
+  "prueba": "B1: teleop_twist_keyboard real + Ctrl+C durante el movimiento (sin k)",
+  "comando": "v=0,3 m/s (tecla i)",
+  "n_ordenes_recibidas": 41,
+  "t_ultima_orden_s": 85.744,
+  "vel_real_en_ultima_orden_m_s": 9.580345971708544e-08,
+  "t_watchdog_cero_s": 0.0010000000000047748,
+  "t_hasta_parada_s": 0.006000000000000227,
+  "desplazamiento_desde_ultima_orden_hasta_parada_m": 1.0271907768810706e-09,
+  "desplazamiento_posterior_a_la_parada_m": 2.2456170256646146e-09,
+  "vel_real_final_m_s": 0.0,
+  "ultima_orden_en_seguro": [
+   0.0,
+   0.0
+  ],
+  "watchdog_publicando_hasta_el_final": true,
+  "resultado": "PARA AUTOMATICAMENTE"
+ },
+ "B2": {
+  "prueba": "B2: ros2 topic pub -r 10 + Ctrl+C (SIGINT) durante el movimiento",
+  "comando": "v=0,3 m/s a 10 Hz",
+  "n_ordenes_recibidas": 20,
+  "t_ultima_orden_s": 98.47500000000001,
+  "vel_real_en_ultima_orden_m_s": 0.29999978057260807,
+  "t_watchdog_cero_s": 0.5049999999999955,
+  "t_hasta_parada_s": 0.5549999999999926,
+  "desplazamiento_desde_ultima_orden_hasta_parada_m": 0.157818675043238,
+  "desplazamiento_posterior_a_la_parada_m": 1.8999292805688128e-08,
+  "vel_real_final_m_s": 0.0,
+  "ultima_orden_en_seguro": [
+   0.0,
+   0.0
+  ],
+  "watchdog_publicando_hasta_el_final": true,
+  "resultado": "PARA AUTOMATICAMENTE"
+ },
+ "C": {
+  "prueba": "C: v=0,3 m/s 10 Hz durante 2 s y se deja de publicar (silencio, sin cero)",
+  "comando": "v=0,3 m/s",
+  "n_ordenes_recibidas": 20,
+  "t_ultima_orden_s": 107.44500000000001,
+  "vel_real_en_ultima_orden_m_s": 0.2999997805726079,
+  "t_watchdog_cero_s": 0.5150000000000006,
+  "t_hasta_parada_s": 0.5649999999999977,
+  "desplazamiento_desde_ultima_orden_hasta_parada_m": 0.16081867434958497,
+  "desplazamiento_posterior_a_la_parada_m": 1.8999292805688128e-08,
+  "vel_real_final_m_s": 0.0,
+  "ultima_orden_en_seguro": [
+   0.0,
+   0.0
+  ],
+  "watchdog_publicando_hasta_el_final": true,
+  "resultado": "PARA AUTOMATICAMENTE"
+ },
+ "E": {
+  "prueba": "E: orden valida tras una caducidad: v=0,3 m/s 4 s",
+  "recorrido_real_m": 1.1890145937944165,
+  "esperado_m": 1.2,
+  "diferencia_mm": -10.985406205583415,
+  "referencia_sin_watchdog_mm": -8.4,
+  "vel_odom_final": 0.2999999999981906,
+  "resultado": "REANUDA"
+ },
+ "D": {
+  "prueba": "D: bloqueado 2 s contra caja_1, se deja de publicar, se RETIRA la caja (gz remove) y se espera 5 s",
+  "comando": "v=0,3 m/s hacia la caja",
+  "n_ordenes_recibidas": 80,
+  "t_ultima_orden_s": 133.745,
+  "vel_real_en_ultima_orden_m_s": 0.0,
+  "t_watchdog_cero_s": 0.5150000000000148,
+  "t_hasta_parada_s": 0.0049999999999954525,
+  "desplazamiento_desde_ultima_orden_hasta_parada_m": 0.0,
+  "desplazamiento_posterior_a_la_parada_m": 9.440328572256724e-07,
+  "vel_real_final_m_s": 0.0,
+  "ultima_orden_en_seguro": [
+   0.0,
+   0.0
+  ],
+  "watchdog_publicando_hasta_el_final": true,
+  "resultado": "NO REANUDA",
+  "bloqueado_antes_de_dejar_de_publicar": true,
+  "velocidad_max_tras_retirar_caja_m_s": 0.0,
+  "desplazamiento_tras_retirar_caja_m": 0.0,
+  "caja_retirada": true
+ }
+}

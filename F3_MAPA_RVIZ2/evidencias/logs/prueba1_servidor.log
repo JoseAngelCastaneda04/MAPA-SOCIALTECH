@@ -1,0 +1,38 @@
+[INFO] [1794132311.839250088] [lifecycle_manager]: Creating
+[INFO] [1794132311.840502737] [map_server]: 
+	map_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794132311.840565602] [map_server]: Creating
+[INFO] [1794132311.847278657] [lifecycle_manager]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [1794132312.039609016] [lifecycle_manager]: [34m[1mStarting managed nodes bringup...[0m[0m
+[INFO] [1794132312.039679730] [lifecycle_manager]: [34m[1mConfiguring map_server[0m[0m
+[INFO] [1794132312.039919326] [map_server]: Configuring
+[INFO] [1794132312.039976453] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[INFO] [1794132312.040188226] [map_io]: resolution: 0.01
+[INFO] [1794132312.040196732] [map_io]: origin[0]: 4.7299
+[INFO] [1794132312.040203434] [map_io]: origin[1]: -11.32
+[INFO] [1794132312.040206361] [map_io]: origin[2]: 0
+[INFO] [1794132312.040209204] [map_io]: free_thresh: 0.196
+[INFO] [1794132312.040213042] [map_io]: occupied_thresh: 0.65
+[INFO] [1794132312.040217019] [map_io]: mode: trinary
+[INFO] [1794132312.040220582] [map_io]: negate: 0
+[INFO] [1794132312.048936008] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[INFO] [1794132312.068617252] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[INFO] [1794132312.075950620] [lifecycle_manager]: [34m[1mActivating map_server[0m[0m
+[INFO] [1794132312.076030075] [map_server]: Activating
+[INFO] [1794132312.077272163] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1794132312.179755803] [lifecycle_manager]: Server map_server connected with bond.
+[INFO] [1794132312.179810507] [lifecycle_manager]: [34m[1mManaged nodes are active[0m[0m
+[INFO] [1794132312.179837743] [lifecycle_manager]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [1794133406.103839632] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1794133406.104006072] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1794133406.104026787] [lifecycle_manager]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager)
+[INFO] [1794133406.104115325] [lifecycle_manager]: [34m[1mTerminating bond timer...[0m[0m
+[INFO] [1794133406.104126425] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[INFO] [1794133406.104215095] [map_server]: Deactivating
+[INFO] [1794133406.104226267] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133406.114430350] [map_server]: Cleaning up
+[INFO] [1794133406.114474534] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1794133406.116680058] [map_server]: Destroying
+[INFO] [1794133406.116973917] [lifecycle_manager]: Destroying lifecycle_manager

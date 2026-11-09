@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="vivienda_walls">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="walls">
+      <collision name="walls_collision">
+        <geometry>
+          <mesh>
+            <uri>vivienda_walls_walls.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="walls_visual">
+        <geometry>
+          <mesh>
+            <uri>vivienda_walls_walls.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

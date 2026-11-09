@@ -1,0 +1,5 @@
+# F5: pose inicial del TRACER en coordenadas del mapa/CAD (m, grados). UNICA fuente: la usan el mundo (generar_mundo.py) y el TF estatico map->odom (launch).
+# odom nace en esta pose (el DiffDrive integra desde 0,0,0 en el arranque) => map->odom = esta pose.
+x: 9.70
+y: -2.70
+yaw_deg: -90.0

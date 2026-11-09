@@ -1,0 +1,26 @@
+make  install-recursive
+make[1]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14'
+Making install in src
+make[2]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src'
+Making install in codepages
+make[3]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src/codepages'
+make[4]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src/codepages'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src/codepages'
+make[3]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src/codepages'
+make[3]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src'
+make[4]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src'
+ /usr/bin/mkdir -p '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg/lib'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libredwg.la '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg/lib'
+libtool: install: /usr/bin/install -c .libs/libredwg.so.0.0.14 /home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg/lib/libredwg.so.0.0.14
+/usr/bin/install: target 'SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg/lib/libredwg.so.0.0.14': No such file or directory
+make[4]: *** [Makefile:658: install-libLTLIBRARIES] Error 1
+make[4]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src'
+make[3]: *** [Makefile:935: install-am] Error 2
+make[3]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src'
+make[2]: *** [Makefile:766: install-recursive] Error 1
+make[2]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src'
+make[1]: *** [Makefile:723: install-recursive] Error 1
+make[1]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14'
+make: *** [Makefile:1119: install] Error 2

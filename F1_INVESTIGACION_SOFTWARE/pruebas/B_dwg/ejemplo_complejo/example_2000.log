@@ -1,0 +1,56 @@
+Warning: Skip HATCH common handles due to short handle stream
+Warning: Unstable Class object 506 MATERIAL (0x481) 114/0
+Warning: Unstable Class object 506 MATERIAL (0x481) 122/0
+Warning: Unstable Class object 506 MATERIAL (0x481) 130/0
+Warning: Unstable Class object 508 TABLESTYLE (0xfff) 164/0
+Warning: Unstable Class object 510 MLEADERSTYLE (0xfff) 184/0
+Warning: Unhandled Class object 513 ACDBASSOCPERSSUBENTMANAGER (0x400) 214/0
+Warning: Unhandled Class object 514 ACDBPERSSUBENTMANAGER (0x400) 215/0
+Warning: Unhandled Class object 515 ACSH_SWEEP_CLASS (0x481) 217/0
+Warning: Unstable Class object 516 ACAD_EVALUATION_GRAPH (0x481) 218/0
+Warning: Unstable Class object 519 ACDBASSOCACTION (0x401) 240/0
+Warning: Unhandled Class object 520 ACDBASSOCALIGNEDDIMACTIONBODY (0x401) 241/0
+Warning: Unstable Class object 521 ACDBASSOCOSNAPPOINTREFACTIONPARAM (0x401) 242/0
+Warning: Unstable Class object 522 ACDBASSOCVERTEXACTIONPARAM (0x401) 243/0
+Warning: Unstable Class object 524 ACDBASSOCDEPENDENCY (0x401) 246/0
+Warning: Unstable Class entity 525 ARC_DIMENSION (0x401) 248/0
+Warning: Unstable Class object 526 DIMASSOC (0x0) 264/0
+Warning: Unstable Class object 526 DIMASSOC (0x0) 282/0
+Warning: Unstable Class object 526 DIMASSOC (0x0) 308/0
+Warning: Unstable Class object 526 DIMASSOC (0x0) 321/0
+Warning: Unstable Class object 526 DIMASSOC (0x0) 327/0
+Warning: Unstable Class object 526 DIMASSOC (0x0) 333/0
+Warning: Unstable Class object 526 DIMASSOC (0x0) 348/0
+Warning: Unstable Class object 526 DIMASSOC (0x0) 354/0
+Warning: Unhandled Class entity 528 ACAD_TABLE (0x401) 397/0
+Warning: Unstable Class object 506 MATERIAL (0x481) 455/0
+Warning: Unhandled Class object 529 TABLECONTENT (0x480) 467/0
+Warning: Unhandled Class object 531 DATATABLE (0x0) 563/0
+Warning: Unstable Class entity 525 ARC_DIMENSION (0x401) 248/399
+Warning: Unknown object, skipping eed/reactors/xdic
+Warning: Unstable Class object 506 MATERIAL (0x481) 114/269
+Warning: Unstable Class object 506 MATERIAL (0x481) 122/271
+Warning: Unstable Class object 506 MATERIAL (0x481) 130/279
+Warning: Unstable Class object 510 MLEADERSTYLE (0xfff) 184/2AF
+Warning: Unknown object, skipping eed/reactors/xdic
+Warning: Unknown object, skipping eed/reactors/xdic
+Warning: Unknown object, skipping eed/reactors/xdic
+Warning: Unstable Class object 516 ACAD_EVALUATION_GRAPH (0x481) 218/2E3
+Warning: Unstable Class object 519 ACDBASSOCACTION (0x401) 240/391
+Warning: Unknown object, skipping eed/reactors/xdic
+Warning: Unstable Class object 521 ACDBASSOCOSNAPPOINTREFACTIONPARAM (0x401) 242/393
+Warning: Unstable Class object 522 ACDBASSOCVERTEXACTIONPARAM (0x401) 243/394
+Warning: Unstable Class object 524 ACDBASSOCDEPENDENCY (0x401) 246/397
+Warning: Unstable Class object 526 DIMASSOC (0x0) 264/3B4
+Warning: Unstable Class object 526 DIMASSOC (0x0) 282/42F
+Warning: Unstable Class object 526 DIMASSOC (0x0) 308/452
+Warning: Unstable Class object 526 DIMASSOC (0x0) 321/466
+Warning: Unstable Class object 526 DIMASSOC (0x0) 327/47E
+Warning: Unstable Class object 526 DIMASSOC (0x0) 333/496
+Warning: Unstable Class object 526 DIMASSOC (0x0) 348/4AE
+Warning: Unstable Class object 526 DIMASSOC (0x0) 354/4C6
+Warning: Unstable Class object 506 MATERIAL (0x481) 455/765
+Warning: Unknown object, skipping eed/reactors/xdic
+Warning: Unknown object, skipping eed/reactors/xdic
+Reading DWG file pruebas/B_dwg/ejemplo_complejo/example_2000.dwg
+Writing DXF file pruebas/B_dwg/ejemplo_complejo/example_2000.dxf

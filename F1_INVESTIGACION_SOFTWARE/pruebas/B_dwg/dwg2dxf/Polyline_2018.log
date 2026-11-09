@@ -1,0 +1,15 @@
+Warning: Unstable Class object 504 TABLESTYLE (0xfff) 42/0
+Warning: TODO TABLESTYLE r2010+ missing fields
+Warning: Unstable Class object 505 MATERIAL (0x481) 45/0
+Warning: Unstable Class object 505 MATERIAL (0x481) 46/0
+Warning: Unstable Class object 505 MATERIAL (0x481) 47/0
+Warning: Unstable Class object 508 MLEADERSTYLE (0xfff) 68/0
+Warning: Unstable Class object 508 MLEADERSTYLE (0xfff) 75/0
+Warning: Unhandled Object TABLESTYLE in out_dxf 42/87
+Warning: Unstable Class object 505 MATERIAL (0x481) 45/96
+Warning: Unstable Class object 505 MATERIAL (0x481) 46/97
+Warning: Unstable Class object 505 MATERIAL (0x481) 47/98
+Warning: Unstable Class object 508 MLEADERSTYLE (0xfff) 68/D8
+Warning: Unstable Class object 508 MLEADERSTYLE (0xfff) 75/E5
+Reading DWG file pruebas/B_dwg/dwg2dxf/Polyline_2018.dwg
+Writing DXF file pruebas/B_dwg/dwg2dxf/Polyline_2018.dxf

@@ -1,0 +1,91 @@
+make  all-recursive
+make[1]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14'
+Making all in src
+make[2]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src'
+make  all-recursive
+make[3]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src'
+Making all in codepages
+make[4]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src/codepages'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src/codepages'
+make[4]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src'
+  CC       dwg.lo
+  CC       common.lo
+  CC       codepages.lo
+  CC       bits.lo
+  CC       logging.lo
+  CC       decode.lo
+  CC       decode2.lo
+  CC       decode_r11.lo
+  CC       decode_r2007.lo
+  CC       reedsolomon.lo
+  CC       print.lo
+  CC       free.lo
+  CC       hash.lo
+  CC       dynapi.lo
+  CC       classes.lo
+  CC       dwg_api.lo
+  CC       objects.lo
+  CC       geom.lo
+  CC       out_dxf.lo
+  CC       out_dxfb.lo
+  CC       out_json.lo
+  CC       out_geojson.lo
+  CC       encode.lo
+  CC       encode2.lo
+  CC       dxfclasses.lo
+  CC       in_dxf.lo
+  CC       in_json.lo
+  CCLD     libredwg.la
+make[4]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src'
+make[3]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src'
+make[2]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/src'
+Making all in programs
+make[2]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/programs'
+  CC       dwgread.o
+  CC       dwgbmp.o
+  CC       dwg2dxf.o
+  CC       dwg2SVG.o
+  CC       escape.o
+  CC       dwglayers.o
+  CC       dwggrep-dwggrep.o
+  CC       dwgrewrite.o
+  CC       dxf2dwg.o
+  CC       dwgwrite.o
+  CC       dxfwrite.o
+  CCLD     dwgread
+  CCLD     dwglayers
+  CCLD     dwgwrite
+  CCLD     dxfwrite
+  CCLD     dwgbmp
+  CCLD     dwgrewrite
+  CCLD     dxf2dwg
+  CCLD     dwg2dxf
+  CCLD     dwg2SVG
+  CCLD     dwggrep
+make[2]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/programs'
+Making all in examples
+make[2]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/examples'
+  CC       dwgadd.o
+  CC       load_dwg.o
+  CC       dwg2svg2.o
+  CC       dwgfuzz.o
+  CCLD     load_dwg
+  CCLD     dwgfuzz
+  CCLD     dwg2svg2
+  CCLD     dwgadd
+make[2]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/examples'
+Making all in test
+make[2]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/test'
+Making all in unit-testing
+make[3]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/test/unit-testing'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/test/unit-testing'
+make[3]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/test'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/test'
+make[2]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/test'
+make[2]: Entering directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14'
+make[1]: Leaving directory '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14'

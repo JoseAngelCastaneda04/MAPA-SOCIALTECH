@@ -1,0 +1,84 @@
+header {
+  stamp {
+    sec: 30
+    nsec: 767000000
+  }
+}
+pose {
+  name: "suelo"
+  id: 4
+  position {
+    x: 11.5
+    y: -5.4
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "piso"
+  id: 8
+  position {
+    x: 4.7299
+    y: -11.32
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "l"
+  id: 5
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "walls"
+  id: 9
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "v"
+  id: 6
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "walls_visual"
+  id: 10
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "sunVisual"
+  id: 13
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "sun"
+  id: 12
+  position {
+    z: 10
+  }
+  orientation {
+    w: 1
+  }
+}
+

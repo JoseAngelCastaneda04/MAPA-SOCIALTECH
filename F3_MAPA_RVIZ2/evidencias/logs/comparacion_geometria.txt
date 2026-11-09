@@ -1,0 +1,318 @@
+{
+ "dimensiones": {
+  "CAD_bbox_min": [
+   4.9299,
+   -11.12
+  ],
+  "CAD_bbox_max": [
+   18.0199,
+   0.27
+  ],
+  "CAD_tamano": [
+   13.09,
+   11.39
+  ],
+  "STL_bbox_min_xy": [
+   4.9299,
+   -11.12
+  ],
+  "STL_bbox_max_xy": [
+   18.0199,
+   0.27
+  ],
+  "STL_tamano_xy": [
+   13.09,
+   11.39
+  ],
+  "STL_altura": 2.5,
+  "MAPA_ocupado_min": [
+   4.9299,
+   -11.12
+  ],
+  "MAPA_ocupado_max": [
+   18.0199,
+   0.27
+  ],
+  "MAPA_ocupado_tamano": [
+   13.09,
+   11.39
+  ],
+  "MAPA_extension_total": [
+   13.5,
+   11.79
+  ],
+  "MAPA_origen": [
+   4.7299,
+   -11.32
+  ],
+  "MODELO_pose": [
+   4.7299,
+   -11.32,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "margen_libre_mapa_(min x,y | max x,y)": [
+   0.2,
+   0.2,
+   0.21,
+   0.2
+  ],
+  "error_MAPA-CAD_bbox_min": [
+   -0.0,
+   -0.0
+  ],
+  "error_MAPA-CAD_bbox_max": [
+   -0.0,
+   -0.0
+  ],
+  "error_STL-CAD_bbox_min": [
+   -0.0,
+   -0.0
+  ],
+  "error_STL-CAD_bbox_max": [
+   -0.0,
+   -0.0
+  ],
+  "error_MAPA-STL_bbox_min": [
+   -0.0,
+   -0.0
+  ],
+  "error_MAPA-STL_bbox_max": [
+   -0.0,
+   -0.0
+  ],
+  "escala_celda_m": 0.009999999776482582,
+  "escala_STL/CAD_x": 1.0
+ },
+ "areas_m2": {
+  "CAD": 10.534,
+  "MAPA": 10.5509,
+  "STL_tapa": 10.5591
+ },
+ "IoU_2.5mm": {
+  "MAPA_vs_CAD": 0.99823,
+  "STL_vs_CAD": 0.9975,
+  "MAPA_vs_STL": 0.99921
+ },
+ "orientacion_IoU_MAPA_vs_CAD": {
+  "identidad (correcta)": 0.9982,
+  "espejo vertical (y invertida)": 0.0525,
+  "espejo horizontal (x invertida)": 0.1012,
+  "giro 180°": 0.0329
+ },
+ "desviacion_bordes": {
+  "MAPA→CAD": {
+   "media_m": 0.0001,
+   "p99_m": 0.005,
+   "max_m": 0.0075
+  },
+  "CAD→MAPA": {
+   "media_m": 0.0001,
+   "p99_m": 0.005,
+   "max_m": 0.0075
+  },
+  "STL→CAD": {
+   "media_m": 0.0002,
+   "p99_m": 0.005,
+   "max_m": 0.0075
+  },
+  "CAD→STL": {
+   "media_m": 0.0002,
+   "p99_m": 0.005,
+   "max_m": 0.009
+  },
+  "MAPA→STL": {
+   "media_m": 0.0,
+   "p99_m": 0.0025,
+   "max_m": 0.0075
+  },
+  "STL→MAPA": {
+   "media_m": 0.0,
+   "p99_m": 0.0025,
+   "max_m": 0.0075
+  }
+ },
+ "habitaciones_nucleos_libres": {
+  "CAD": [
+   {
+    "centro_xy": [
+     6.576,
+     -8.51
+    ],
+    "area_nucleo_m2": 22.325
+   },
+   {
+    "centro_xy": [
+     9.17,
+     -3.174
+    ],
+    "area_nucleo_m2": 25.197
+   },
+   {
+    "centro_xy": [
+     10.932,
+     -8.954
+    ],
+    "area_nucleo_m2": 4.974
+   },
+   {
+    "centro_xy": [
+     13.565,
+     -8.954
+    ],
+    "area_nucleo_m2": 4.973
+   },
+   {
+    "centro_xy": [
+     15.1,
+     -4.994
+    ],
+    "area_nucleo_m2": 1.06
+   },
+   {
+    "centro_xy": [
+     16.219,
+     -1.749
+    ],
+    "area_nucleo_m2": 18.49
+   },
+   {
+    "centro_xy": [
+     16.402,
+     -8.272
+    ],
+    "area_nucleo_m2": 8.949
+   }
+  ],
+  "MAPA": [
+   {
+    "centro_xy": [
+     6.576,
+     -8.51
+    ],
+    "area_nucleo_m2": 22.323
+   },
+   {
+    "centro_xy": [
+     9.17,
+     -3.175
+    ],
+    "area_nucleo_m2": 25.187
+   },
+   {
+    "centro_xy": [
+     10.932,
+     -8.954
+    ],
+    "area_nucleo_m2": 4.974
+   },
+   {
+    "centro_xy": [
+     13.565,
+     -8.954
+    ],
+    "area_nucleo_m2": 4.973
+   },
+   {
+    "centro_xy": [
+     15.1,
+     -4.994
+    ],
+    "area_nucleo_m2": 1.06
+   },
+   {
+    "centro_xy": [
+     16.219,
+     -1.749
+    ],
+    "area_nucleo_m2": 18.49
+   },
+   {
+    "centro_xy": [
+     16.402,
+     -8.272
+    ],
+    "area_nucleo_m2": 8.949
+   }
+  ],
+  "STL": [
+   {
+    "centro_xy": [
+     6.576,
+     -8.51
+    ],
+    "area_nucleo_m2": 22.323
+   },
+   {
+    "centro_xy": [
+     9.169,
+     -3.174
+    ],
+    "area_nucleo_m2": 25.182
+   },
+   {
+    "centro_xy": [
+     10.932,
+     -8.954
+    ],
+    "area_nucleo_m2": 4.974
+   },
+   {
+    "centro_xy": [
+     13.565,
+     -8.954
+    ],
+    "area_nucleo_m2": 4.973
+   },
+   {
+    "centro_xy": [
+     15.1,
+     -4.994
+    ],
+    "area_nucleo_m2": 1.06
+   },
+   {
+    "centro_xy": [
+     16.219,
+     -1.749
+    ],
+    "area_nucleo_m2": 18.49
+   },
+   {
+    "centro_xy": [
+     16.402,
+     -8.272
+    ],
+    "area_nucleo_m2": 8.949
+   }
+  ]
+ },
+ "habitaciones_n": {
+  "CAD": 7,
+  "MAPA": 7,
+  "STL": 7
+ },
+ "habitaciones_dist_centros_MAPA-CAD_m": [
+  0.0,
+  0.001,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ]
+}
+Dormitorio 1 ancho (cota 2.50)     CAD 2.51  MAPA 2.51  STL 2.51 | errW M-C 0.0 S-C 0.0 | ext M-C [np.float64(-0.0), np.float64(-0.0)] S-C [np.float64(-0.0), np.float64(-0.0)] | z1.25 [9.6699, 12.1799]
+Dormitorio 2 ancho (cota 2.50)     CAD 2.51  MAPA 2.51  STL 2.51 | errW M-C 0.0 S-C 0.0 | ext M-C [np.float64(-0.0), np.float64(-0.0)] S-C [np.float64(-0.0), np.float64(-0.0)] | z1.25 [12.3199, 14.8299]
+Dormitorio 3 ancho (cota 2.90)     CAD 2.91  MAPA 2.91  STL 2.91 | errW M-C 0.0 S-C 0.0 | ext M-C [np.float64(-0.0), np.float64(-0.0)] S-C [np.float64(-0.0), np.float64(-0.0)] | z1.25 [14.9699, 17.8799]
+Dormitorio 1 fondo (cota 4.00)     CAD 4.01  MAPA 4.01  STL 4.01 | errW M-C 0.0 S-C 0.0 | ext M-C [np.float64(-0.0), np.float64(-0.0)] S-C [np.float64(-0.0), np.float64(-0.0)] | z1.25 [-10.98, -6.97]
+Dormitorio 2 fondo (cota 4.00)     CAD 4.01  MAPA 4.01  STL 4.01 | errW M-C 0.0 S-C 0.0 | ext M-C [np.float64(-0.0), np.float64(-0.0)] S-C [np.float64(-0.0), np.float64(-0.0)] | z1.25 [-10.98, -6.97]
+Dormitorio 3 lado E (cota 5.75)    CAD 5.76  MAPA 5.76  STL 5.76 | errW M-C 0.0 S-C 0.0 | ext M-C [np.float64(-0.0), np.float64(-0.0)] S-C [np.float64(-0.0), np.float64(-0.0)] | z1.25 [-10.98, -5.22]
+Puerta WC izq. (arco r=0.81)       CAD 0.91  MAPA 0.91  STL 0.91 | errW M-C 0.0 S-C 0.0 | ext M-C [np.float64(-0.0), np.float64(-0.0)] S-C [np.float64(-0.0), np.float64(-0.0)] | z1.25 [10.9699, 11.8799]
+Puerta WC der. (arco r=0.81)       CAD 0.91  MAPA 0.91  STL 0.91 | errW M-C 0.0 S-C 0.0 | ext M-C [np.float64(-0.0), np.float64(-0.0)] S-C [np.float64(-0.0), np.float64(-0.0)] | z1.25 [15.5699, 16.4799]
+Puerta dorm.1 (arco r=0.81)        CAD 0.91  MAPA 0.91  STL 0.91 | errW M-C 0.0 S-C 0.0 | ext M-C [np.float64(-0.0001), np.float64(-0.0)] S-C [np.float64(-0.0001), np.float64(-0.0)] | z1.25 [11.2199, 12.1299]
+Puerta dorm.2 (arco r=0.81)        CAD 0.91  MAPA 0.91  STL 0.91 | errW M-C 0.0 S-C 0.0 | ext M-C [np.float64(-0.0), np.float64(-0.0)] S-C [np.float64(-0.0), np.float64(-0.0)] | z1.25 [12.3699, 13.2799]
+Puerta dorm.3 (arco r=0.81)        CAD 1.01  MAPA 1.01  STL 1.01 | errW M-C 0.0 S-C 0.0 | ext M-C [np.float64(-0.0), np.float64(-0.0)] S-C [np.float64(-0.0), np.float64(-0.0)] | z1.25 [-6.83, -5.82]
+Puerta entrada (arco r=0.91)       CAD 1.5424  MAPA 1.54  STL 1.5428 | errW M-C -0.0024 S-C 0.0004 | ext M-C [np.float64(0.0024), np.float64(-0.0)] S-C [np.float64(-0.0004), np.float64(-0.0)] | z1.25 [-3.6628, -2.12]

@@ -1,0 +1,90 @@
+{
+ "vista_completa": {
+  "px_por_m_teorico": 70,
+  "mapa_px": [
+   945,
+   826
+  ],
+  "mapa_m_medido": [
+   13.5,
+   11.8
+  ],
+  "mapa_m_esperado": [
+   13.5,
+   11.79
+  ],
+  "muros_caja_px": [
+   14,
+   15,
+   14,
+   15
+  ],
+  "muros_caja_tamano_m_medido": [
+   13.086,
+   11.386
+  ],
+  "muros_caja_tamano_m_CAD": [
+   13.09,
+   11.39
+  ],
+  "margen_izq_m": 0.2,
+  "margen_inf_m": 0.214,
+  "margen_esperado_m": 0.2,
+  "colores_libre/ocupado": [
+   [
+    255,
+    255,
+    255
+   ],
+   [
+    0,
+    0,
+    0
+   ]
+  ]
+ },
+ "puertas": [
+  {
+   "nombre": "Puerta WC izq. (arco r=0.81)",
+   "eje": "x",
+   "hueco_px": 273,
+   "hueco_m": 0.91,
+   "toca_borde_vista": false
+  },
+  {
+   "nombre": "Puerta WC der. (arco r=0.81)",
+   "eje": "x",
+   "hueco_px": 273,
+   "hueco_m": 0.91,
+   "toca_borde_vista": false
+  },
+  {
+   "nombre": "Puerta dorm.1 (arco r=0.81)",
+   "eje": "x",
+   "hueco_px": 273,
+   "hueco_m": 0.91,
+   "toca_borde_vista": false
+  },
+  {
+   "nombre": "Puerta dorm.2 (arco r=0.81)",
+   "eje": "x",
+   "hueco_px": 273,
+   "hueco_m": 0.91,
+   "toca_borde_vista": false
+  },
+  {
+   "nombre": "Puerta dorm.3 (arco r=0.81)",
+   "eje": "y",
+   "hueco_px": 303,
+   "hueco_m": 1.01,
+   "toca_borde_vista": false
+  },
+  {
+   "nombre": "Puerta entrada (arco r=0.91)",
+   "eje": "y",
+   "hueco_px": 462,
+   "hueco_m": 1.54,
+   "toca_borde_vista": false
+  }
+ ]
+}

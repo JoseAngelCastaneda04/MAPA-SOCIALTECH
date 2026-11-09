@@ -1,0 +1,62 @@
+[INFO] [launch]: All log files can be found below /home/jose-angel/.ros/log/2026-11-08-13-11-56-369513-dellG15-122374
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [map_server-1]: process started with pid [122406]
+[INFO] [lifecycle_manager-2]: process started with pid [122407]
+[INFO] [static_transform_publisher-3]: process started with pid [122408]
+[INFO] [rviz2-4]: process started with pid [122409]
+[static_transform_publisher-3] [INFO] [1794139916.449296275] [tf_map_world]: Spinning until stopped - publishing transform
+[static_transform_publisher-3] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-3] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-3] from 'map' to 'world'
+[lifecycle_manager-2] [INFO] [1794139916.450691673] [lifecycle_manager_mapa]: Creating
+[lifecycle_manager-2] [INFO] [1794139916.453010587] [lifecycle_manager_mapa]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-2] [INFO] [1794139916.461215190] [lifecycle_manager_mapa]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-2] [INFO] [1794139916.461251696] [lifecycle_manager_mapa]: [34m[1mConfiguring map_server[0m[0m
+[map_server-1] [INFO] [1794139916.461872886] [map_server]: 
+[map_server-1] 	map_server lifecycle node launched. 
+[map_server-1] 	Waiting on external lifecycle transitions to activate
+[map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-1] [INFO] [1794139916.461946504] [map_server]: Creating
+[map_server-1] [INFO] [1794139916.643037578] [map_server]: Configuring
+[map_server-1] [INFO] [1794139916.643129516] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F4_ESCENARIO_CON_MOBILIARIO/mapa/piso_amueblado.yaml
+[rviz2-4] [INFO] [1794139916.643196121] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-4] [INFO] [1794139916.643387245] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[map_server-1] [INFO] [1794139916.643428694] [map_io]: resolution: 0.01
+[map_server-1] [INFO] [1794139916.643441287] [map_io]: origin[0]: 4.7299
+[map_server-1] [INFO] [1794139916.643446877] [map_io]: origin[1]: -11.32
+[map_server-1] [INFO] [1794139916.643450098] [map_io]: origin[2]: 0
+[map_server-1] [INFO] [1794139916.643453487] [map_io]: free_thresh: 0.196
+[map_server-1] [INFO] [1794139916.643456439] [map_io]: occupied_thresh: 0.65
+[map_server-1] [INFO] [1794139916.643462685] [map_io]: mode: trinary
+[map_server-1] [INFO] [1794139916.643466361] [map_io]: negate: 0
+[map_server-1] [INFO] [1794139916.643658912] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F4_ESCENARIO_CON_MOBILIARIO/mapa/piso_amueblado.pgm
+[rviz2-4] [INFO] [1794139916.661502564] [rviz2]: Stereo is NOT SUPPORTED
+[map_server-1] [INFO] [1794139916.668543877] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F4_ESCENARIO_CON_MOBILIARIO/mapa/piso_amueblado.pgm: 1350 X 1179 map @ 0.01 m/cell
+[lifecycle_manager-2] [INFO] [1794139916.675180598] [lifecycle_manager_mapa]: [34m[1mActivating map_server[0m[0m
+[map_server-1] [INFO] [1794139916.675266112] [map_server]: Activating
+[map_server-1] [INFO] [1794139916.676702878] [map_server]: Creating bond (map_server) to lifecycle manager.
+[lifecycle_manager-2] [INFO] [1794139916.778748426] [lifecycle_manager_mapa]: Server map_server connected with bond.
+[lifecycle_manager-2] [INFO] [1794139916.778803862] [lifecycle_manager_mapa]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-2] [INFO] [1794139916.778814042] [lifecycle_manager_mapa]: [34m[1mCreating bond timer...[0m[0m
+[rviz2-4] [INFO] [1794139916.780885792] [rviz2]: Trying to create a map of size 1350 x 1179 using 1 swatches
+[rviz2-4] [ERROR] [1794139916.809408966] [rviz2]: rviz/glsl120/indexed_8bit_image.vert
+[rviz2-4] rviz/glsl120/indexed_8bit_image.frag
+[rviz2-4]  GLSL link result : 
+[rviz2-4] active samplers with a different type refer to the same texture image unit
+[static_transform_publisher-3] [INFO] [1794139927.460866572] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[rviz2-4] [INFO] [1794139927.460866669] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_server-1] [INFO] [1794139927.460866671] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_server-1] [INFO] [1794139927.460956219] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[lifecycle_manager-2] [INFO] [1794139927.460866930] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-2] [INFO] [1794139927.460954044] [lifecycle_manager_mapa]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_mapa)
+[lifecycle_manager-2] [INFO] [1794139927.461020336] [lifecycle_manager_mapa]: [34m[1mTerminating bond timer...[0m[0m
+[map_server-1] [INFO] [1794139927.461081905] [map_server]: Deactivating
+[map_server-1] [INFO] [1794139927.461099274] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[map_server-1] [INFO] [1794139927.471449711] [map_server]: Cleaning up
+[map_server-1] [INFO] [1794139927.471511133] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[lifecycle_manager-2] [INFO] [1794139927.472989541] [lifecycle_manager_mapa]: Destroying lifecycle_manager_mapa
+[map_server-1] [INFO] [1794139927.473889369] [map_server]: Destroying
+[INFO] [static_transform_publisher-3]: process has finished cleanly [pid 122408]
+[INFO] [lifecycle_manager-2]: process has finished cleanly [pid 122407]
+[INFO] [map_server-1]: process has finished cleanly [pid 122406]
+[INFO] [rviz2-4]: process has finished cleanly [pid 122409]

@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!-- F5: AgileX TRACER AGV (original, NO Tracer 2.0 / Mini) para ROS 2 Jazzy + Gazebo Harmonic.
+     Geometria: URDF/mallas oficiales de agilexrobotics/tracer_ros (commit 774ba0f, copia en F0). Ver evidencias/DETALLE F5.md §3 (que es medido / documentado / estimado).
+     Marco base_link = el del fabricante (centro entre ruedas motrices; ruedas 0.082 m por debajo). base_footprint = suelo, 0.1425 m por debajo. +X = delante (supuesto, ver DETALLE).
+     Args: mesh_prefix (URI de las mallas), lidar (true/false), lidar_* ; se genera con scripts/generar_robot.sh -->
+<robot name="tracer_agv" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:arg name="mesh_prefix" default="model://tracer_agv/meshes"/>
+  <xacro:arg name="lidar" default="true"/>
+  <xacro:arg name="lidar_x" default="0.2125"/>
+  <xacro:arg name="lidar_z" default="0.0575"/>  <!-- sobre base_link: 0.0575+0.1425 = 0.20 m sobre el suelo (altura del modelo 2025) -->
+  <xacro:arg name="lidar_hz" default="10"/>
+  <xacro:arg name="lidar_samples" default="720"/>
+  <xacro:arg name="lidar_fov" default="6.283185307"/>
+  <xacro:arg name="gz_extras" default="true"/>
+
+  <!-- ===== MEDIDO en las mallas oficiales ===== -->
+  <xacro:property name="PI" value="3.14159265358979"/>
+  <xacro:property name="ground_z" value="0.1425"/>            <!-- base_link -> suelo: rueda motriz z=-0.082, radio 0.0605 -->
+  <xacro:property name="wheel_r" value="0.0605"/>            <!-- tracer_wheel.dae: diametro 0.121 -->
+  <xacro:property name="wheel_w" value="0.0844"/>            <!-- tracer_wheel.dae: anchura 0.0844 -->
+  <xacro:property name="wheel_y" value="0.17"/>              <!-- 'wheelbase' del fabricante: separacion entre ruedas motrices = 0.34 -->
+  <xacro:property name="wheel_z" value="-0.082"/>            <!-- wheel_vertical_offset del fabricante -->
+  <xacro:property name="cast_r" value="0.0372"/>             <!-- castor.dae: radio 0.0372, anchura 0.053 -->
+  <xacro:property name="cast_w" value="0.053"/>
+  <!-- ===== ESTIMADO (no documentado): masas y reparto. Total 30 kg = peso oficial en vacio ===== -->
+  <xacro:property name="m_body" value="26.0"/>
+  <xacro:property name="m_wheel" value="1.0"/>
+  <xacro:property name="m_cast" value="0.5"/>
+
+  <xacro:macro name="cyl_inertia" params="m r l axis">  <!-- cilindro macizo; axis = x|y|z -->
+    <xacro:property name="ia" value="${0.5*m*r*r}"/>
+    <xacro:property name="it" value="${m*(3*r*r+l*l)/12}"/>
+    <xacro:if value="${axis=='y'}"><inertia ixx="${it}" iyy="${ia}" izz="${it}" ixy="0" ixz="0" iyz="0"/></xacro:if>
+    <xacro:if value="${axis=='z'}"><inertia ixx="${it}" iyy="${it}" izz="${ia}" ixy="0" ixz="0" iyz="0"/></xacro:if>
+  </xacro:macro>
+
+  <link name="base_footprint"/>
+  <joint name="base_footprint_joint" type="fixed">
+    <origin xyz="0 0 ${ground_z}" rpy="0 0 0"/><parent link="base_footprint"/><child link="base_link"/>
+  </joint>
+
+  <link name="base_link">
+    <inertial>  <!-- ESTIMADO: caja homogenea 0.685x0.57x0.13 centrada en la caja de la malla (z=-0.043) -->
+      <origin xyz="0 0 -0.043" rpy="0 0 0"/><mass value="${m_body}"/>
+      <inertia ixx="${m_body*(0.57*0.57+0.13*0.13)/12}" iyy="${m_body*(0.685*0.685+0.13*0.13)/12}" izz="${m_body*(0.685*0.685+0.57*0.57)/12}" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+    <visual><origin xyz="0 0 0" rpy="${PI/2} 0 0"/><geometry><mesh filename="$(arg mesh_prefix)/tracer_base_link_no_wheel.dae"/></geometry></visual>
+    <collision name="chasis"><origin xyz="0 0 0" rpy="0 0 0"/><geometry><mesh filename="$(arg mesh_prefix)/chasis_colision.obj"/></geometry></collision>
+  </link>
+
+  <xacro:macro name="drive_wheel" params="side y flip">
+    <link name="${side}_wheel_link">
+      <inertial><origin xyz="0 0 0"/><mass value="${m_wheel}"/><xacro:cyl_inertia m="${m_wheel}" r="${wheel_r}" l="${wheel_w}" axis="y"/></inertial>
+      <visual><origin xyz="0 0 0" rpy="${flip} 0 0"/><geometry><mesh filename="$(arg mesh_prefix)/tracer_wheel.dae"/></geometry></visual>
+      <!-- SIMPLIFICACION: esfera r=0.0605 (contacto en la LINEA CENTRAL de la rueda). Con el cilindro plano de 84 mm Gazebo/DART contacta por el borde exterior y el robot gira solo el 80 % de lo que dice la odometria (0.17/0.212; medido). -->
+      <collision name="rueda"><origin xyz="0 0 0" rpy="0 0 0"/><geometry><sphere radius="${wheel_r}"/></geometry></collision>
+    </link>
+    <joint name="${side}_wheel" type="continuous">
+      <origin xyz="0 ${y} ${wheel_z}" rpy="0 0 0"/><parent link="base_link"/><child link="${side}_wheel_link"/>
+      <axis xyz="0 1 0"/><dynamics damping="0.0" friction="0.0"/>
+    </joint>
+  </xacro:macro>
+  <xacro:drive_wheel side="right" y="${-wheel_y}" flip="0"/>
+  <xacro:drive_wheel side="left"  y="${wheel_y}"  flip="${PI}"/>   <!-- el fabricante gira 180 deg la malla izquierda -->
+
+  <!-- Ruedas locas: pivote en (+-0.18955, +-0.17, -0.0381); centro de la rueda desplazado (-0.0218, 0, -0.067) del pivote (valores del fabricante).
+       SIMPLIFICACION: el fabricante las modela con 2 articulaciones continuas (giro de la horquilla + rodadura); aqui van fijas con friccion casi nula (ver DETALLE). -->
+  <xacro:macro name="caster" params="name x y">
+    <link name="${name}_castor_link">
+      <visual><origin xyz="${-0.0218084} 0 -0.067" rpy="${-PI/2} 0 0"/><geometry><mesh filename="$(arg mesh_prefix)/castor.dae"/></geometry></visual>
+      <visual><origin xyz="0 0 0" rpy="${-PI/2} 0 0"/><geometry><mesh filename="$(arg mesh_prefix)/castor_joint.dae"/></geometry></visual>
+      <inertial><origin xyz="${-0.0218084} 0 -0.067"/><mass value="${m_cast}"/><xacro:cyl_inertia m="${m_cast}" r="${cast_r}" l="${cast_w}" axis="y"/></inertial>
+      <collision name="rueda_loca"><origin xyz="${-0.0218084} 0 -0.067" rpy="${PI/2} 0 0"/><geometry><cylinder radius="${cast_r}" length="${cast_w}"/></geometry></collision>
+    </link>
+    <joint name="${name}_castor_joint" type="fixed">
+      <origin xyz="${x} ${y} ${0.03-0.0680886}" rpy="0 0 0"/><parent link="base_link"/><child link="${name}_castor_link"/>
+    </joint>
+  </xacro:macro>
+  <xacro:caster name="fl" x="0.18955" y="${wheel_y}"/>
+  <xacro:caster name="fr" x="0.18955" y="${-wheel_y}"/>
+  <xacro:caster name="rl" x="-0.18955" y="${wheel_y}"/>
+  <xacro:caster name="rr" x="-0.18955" y="${-wheel_y}"/>
+
+  <xacro:if value="$(arg lidar)">
+    <link name="laser">
+      <visual><geometry><cylinder length="0.07" radius="0.03"/></geometry><material name="lidar_gris"><color rgba="0.2 0.2 0.2 1"/></material></visual>
+    </link>
+    <joint name="laser_joint" type="fixed"><origin xyz="$(arg lidar_x) 0 $(arg lidar_z)" rpy="0 0 0"/><parent link="base_link"/><child link="laser"/></joint>
+  </xacro:if>
+
+  <xacro:if value="$(arg gz_extras)">
+    <!-- Friccion: motrices agarran; ruedas locas casi sin friccion (simulan el giro libre de la horquilla) -->
+    <gazebo reference="right_wheel_link"><mu1>1.0</mu1><mu2>1.0</mu2><kp>1e6</kp><kd>100</kd></gazebo>
+    <gazebo reference="left_wheel_link"><mu1>1.0</mu1><mu2>1.0</mu2><kp>1e6</kp><kd>100</kd></gazebo>
+    <xacro:macro name="cast_fric" params="n"><gazebo reference="${n}_castor_link"><mu1>0.02</mu1><mu2>0.02</mu2></gazebo></xacro:macro>
+    <xacro:cast_fric n="fl"/><xacro:cast_fric n="fr"/><xacro:cast_fric n="rl"/><xacro:cast_fric n="rr"/>
+    <gazebo reference="base_link"><mu1>0.3</mu1><mu2>0.3</mu2></gazebo>
+    <gazebo>
+      <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+        <left_joint>left_wheel</left_joint><right_joint>right_wheel</right_joint>
+        <wheel_separation>${2*wheel_y}</wheel_separation><wheel_radius>${wheel_r}</wheel_radius>
+        <max_linear_velocity>1.6</max_linear_velocity><min_linear_velocity>-1.6</min_linear_velocity>
+        <topic>/cmd_vel_seguro</topic>  <!-- entrada protegida por el watchdog (scripts/watchdog_cmd_vel.py); /cmd_vel ya NO llega al DiffDrive --><odom_topic>/odom</odom_topic><tf_topic>/tf</tf_topic>
+        <frame_id>odom</frame_id><child_frame_id>base_footprint</child_frame_id>
+        <odom_publisher_frequency>50</odom_publisher_frequency>
+      </plugin>
+      <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
+        <topic>/joint_states</topic><joint_name>left_wheel</joint_name><joint_name>right_wheel</joint_name>
+      </plugin>
+    </gazebo>
+    <xacro:if value="$(arg lidar)">
+      <gazebo reference="laser">
+        <sensor name="lidar" type="gpu_lidar">
+          <pose>0 0 0 0 0 0</pose><topic>/scan</topic><gz_frame_id>laser</gz_frame_id>
+          <update_rate>$(arg lidar_hz)</update_rate><always_on>true</always_on><visualize>false</visualize>
+          <lidar>
+            <scan><horizontal><samples>$(arg lidar_samples)</samples><resolution>1</resolution><min_angle>${-PI*0+(-$(arg lidar_fov)/2)}</min_angle><max_angle>${$(arg lidar_fov)/2}</max_angle></horizontal></scan>
+            <range><min>0.10</min><max>30.0</max><resolution>0.01</resolution></range>
+          </lidar>
+        </sensor>
+      </gazebo>
+    </xacro:if>
+  </xacro:if>
+</robot>

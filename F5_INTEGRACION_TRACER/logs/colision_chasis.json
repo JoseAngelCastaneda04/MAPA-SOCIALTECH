@@ -1,0 +1,19 @@
+{
+ "n_vertices_original": 97609,
+ "n_vertices_casco": 277,
+ "n_caras": 550,
+ "vol_casco_m3": 0.03947316654338462,
+ "vol_casco_original_m3": 0.04025945023592246,
+ "max_vertice_fuera_m": 0.005223291110842437,
+ "p99_vertice_fuera_m": 0.0028752797213335707,
+ "bbox_min": [
+  -0.3425084,
+  -0.285,
+  -0.1081502
+ ],
+ "bbox_max": [
+  0.3425084,
+  0.285,
+  0.02207698
+ ]
+}

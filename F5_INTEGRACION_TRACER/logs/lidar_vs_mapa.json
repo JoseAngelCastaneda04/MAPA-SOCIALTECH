@@ -1,0 +1,113 @@
+{
+ "salon_libre": {
+  "pose_gazebo": [
+   9.7,
+   -2.7000000326799283,
+   -90.0000000000013
+  ],
+  "frame": "laser",
+  "haces": 720,
+  "finitos": 696,
+  "comparables": 696,
+  "coinciden_3cm": 552,
+  "error_mediano_m": 0.004201097488403027,
+  "error_p95_m": 2.469608383178725,
+  "error_medio_con_signo_m": 0.37290264261183137,
+  "mapa_ocupado_pero_lidar_no_ve_por_objeto": {
+   "pared/otro": 5,
+   "silla_W": 10,
+   "silla_N": 66,
+   "mesa_1": 5,
+   "silla_E": 50,
+   "caja_1": 1
+  },
+  "lidar_ve_mas_cerca_que_mapa": 7
+ },
+ "frente_mesa_sillas": {
+  "pose_gazebo": [
+   8.9,
+   -3.1000000326799277,
+   -90.00000000000124
+  ],
+  "frame": "laser",
+  "haces": 720,
+  "finitos": 690,
+  "comparables": 689,
+  "coinciden_3cm": 507,
+  "error_mediano_m": 0.0046508359908876695,
+  "error_p95_m": 2.9718208789825438,
+  "error_medio_con_signo_m": 0.48664158720413014,
+  "mapa_ocupado_pero_lidar_no_ve_por_objeto": {
+   "pared/otro": 5,
+   "silla_W": 39,
+   "mesa_1": 9,
+   "silla_N": 82,
+   "silla_E": 39
+  },
+  "lidar_ve_mas_cerca_que_mapa": 9
+ },
+ "junto_caja": {
+  "pose_gazebo": [
+   11.599999967319663,
+   -6.3,
+   179.99999999999997
+  ],
+  "frame": "laser",
+  "haces": 720,
+  "finitos": 720,
+  "comparables": 720,
+  "coinciden_3cm": 651,
+  "error_mediano_m": 0.0038684034347538643,
+  "error_p95_m": 2.1532274818420674,
+  "error_medio_con_signo_m": 0.17752237876258462,
+  "mapa_ocupado_pero_lidar_no_ve_por_objeto": {
+   "pared/otro": 7,
+   "silla_E": 19,
+   "silla_S": 31,
+   "caja_1": 1
+  },
+  "lidar_ve_mas_cerca_que_mapa": 11
+ },
+ "entre_mesa_papelera": {
+  "pose_gazebo": [
+   7.6,
+   -7.599999967320064,
+   90.00000000000121
+  ],
+  "frame": "laser",
+  "haces": 720,
+  "finitos": 431,
+  "comparables": 430,
+  "coinciden_3cm": 428,
+  "error_mediano_m": 0.0022754222154620085,
+  "error_p95_m": 0.009849208593339874,
+  "error_medio_con_signo_m": -0.002491345685571451,
+  "mapa_ocupado_pero_lidar_no_ve_por_objeto": {
+   "pared/otro": 1
+  },
+  "lidar_ve_mas_cerca_que_mapa": 2
+ },
+ "ante_puerta_dorm3": {
+  "pose_gazebo": [
+   12.30000003267999,
+   -6.325,
+   -9.736999693328197e-18
+  ],
+  "frame": "laser",
+  "haces": 720,
+  "finitos": 720,
+  "comparables": 720,
+  "coinciden_3cm": 675,
+  "error_mediano_m": 0.0033694934844290536,
+  "error_p95_m": 0.041645998477909424,
+  "error_medio_con_signo_m": 0.049341653217898046,
+  "mapa_ocupado_pero_lidar_no_ve_por_objeto": {
+   "caja_1": 2,
+   "papelera_1": 1,
+   "mesa_2": 2,
+   "pared/otro": 3,
+   "silla_S": 20
+  },
+  "lidar_ve_mas_cerca_que_mapa": 17
+ }
+}

@@ -1,0 +1,17 @@
+# F4: unica fuente de verdad de la distribucion. Editar aqui y ejecutar scripts/regenerar.sh
+# Coordenadas = coordenadas del CAD en metros (las mismas que el mapa y el mundo de F2). yaw en grados, antihorario visto desde arriba.
+# x,y = CENTRO de la huella del objeto (los modelos de F4 tienen el origen centrado). z = altura del suelo (0).
+# Silla: a yaw 0 mira hacia -Y (medido en la malla: el respaldo esta en +Y). Mesa1: 1.736 (X) x 0.774 (Y). Mesa2: 0.502 (X) x 1.948 (Y).
+# POSICIONES DE PRUEBA: no representan el mobiliario real de IQS.
+mapa_base: ../F3_MAPA_RVIZ2/mapa/piso_1cm.yaml     # (ruta relativa a F4_ESCENARIO_CON_MOBILIARIO/) mapa validado de paredes; no se modifica
+mundo_base: ../F2_PLANO_SIMPLE_GAZEBO/mundo/modelos  # modelo del piso (F2, solo lectura)
+slice_z: [0.05, 1.8]    # banda de alturas que cuenta como obstaculo en el mapa 2D
+objetos:
+  - {id: mesa_1,     modelo: mesa1,    x: 8.90,  y: -4.90, z: 0, yaw_deg: 0}
+  - {id: mesa_2,     modelo: mesa2,    x: 8.90,  y: -6.35, z: 0, yaw_deg: 90}
+  - {id: silla_N,    modelo: silla,    x: 8.90,  y: -4.15, z: 0, yaw_deg: 0}
+  - {id: silla_S,    modelo: silla,    x: 8.90,  y: -5.65, z: 0, yaw_deg: 180}
+  - {id: silla_W,    modelo: silla,    x: 7.75,  y: -4.90, z: 0, yaw_deg: 90}
+  - {id: silla_E,    modelo: silla,    x: 10.05, y: -4.90, z: 0, yaw_deg: -90}
+  - {id: caja_1,     modelo: caja,     x: 10.20, y: -6.30, z: 0, yaw_deg: 0}
+  - {id: papelera_1, modelo: papelera, x: 7.55,  y: -6.45, z: 0, yaw_deg: 0}

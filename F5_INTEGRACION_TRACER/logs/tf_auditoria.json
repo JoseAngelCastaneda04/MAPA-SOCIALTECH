@@ -1,0 +1,94 @@
+{
+ "arbol": {
+  "base_footprint": {
+   "padre": "odom",
+   "publicador": "default_authority",
+   "tasa_hz": 50.1,
+   "mas_reciente_s": 37.56
+  },
+  "odom": {
+   "padre": "map",
+   "publicador": "default_authority",
+   "tasa_hz": 10000.0,
+   "mas_reciente_s": 0.0
+  },
+  "left_wheel_link": {
+   "padre": "base_link",
+   "publicador": "default_authority",
+   "tasa_hz": 20.1,
+   "mas_reciente_s": 37.55
+  },
+  "base_link": {
+   "padre": "base_footprint",
+   "publicador": "default_authority",
+   "tasa_hz": 10000.0,
+   "mas_reciente_s": 0.0
+  },
+  "right_wheel_link": {
+   "padre": "base_link",
+   "publicador": "default_authority",
+   "tasa_hz": 20.1,
+   "mas_reciente_s": 37.55
+  },
+  "fl_castor_link": {
+   "padre": "base_link",
+   "publicador": "default_authority",
+   "tasa_hz": 10000.0,
+   "mas_reciente_s": 0.0
+  },
+  "fr_castor_link": {
+   "padre": "base_link",
+   "publicador": "default_authority",
+   "tasa_hz": 10000.0,
+   "mas_reciente_s": 0.0
+  },
+  "laser": {
+   "padre": "base_link",
+   "publicador": "default_authority",
+   "tasa_hz": 10000.0,
+   "mas_reciente_s": 0.0
+  },
+  "rl_castor_link": {
+   "padre": "base_link",
+   "publicador": "default_authority",
+   "tasa_hz": 10000.0,
+   "mas_reciente_s": 0.0
+  },
+  "rr_castor_link": {
+   "padre": "base_link",
+   "publicador": "default_authority",
+   "tasa_hz": 10000.0,
+   "mas_reciente_s": 0.0
+  }
+ },
+ "tf_dinamico_padres_por_hijo": {
+  "left_wheel_link": [
+   "base_link"
+  ],
+  "right_wheel_link": [
+   "base_link"
+  ],
+  "base_footprint": [
+   "odom"
+  ]
+ },
+ "hijos_con_varios_padres": [],
+ "lookups_ok": 23834,
+ "lookups_fallidos": 0,
+ "primeros_fallos": [],
+ "err_map_base_footprint_vs_gazebo_m": {
+  "n": 11917,
+  "media": 0.0009218011310134992,
+  "max": 0.001119577886025341
+ },
+ "err_yaw_deg": {
+  "media": 0.36973552188995645,
+  "max": 0.583707662259972
+ },
+ "retraso_sello_vs_clock_s": {
+  "mediana": 0.0,
+  "max": 0.08900000000000041,
+  "min": -0.035000000000003695,
+  "n": 2710
+ }
+}

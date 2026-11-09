@@ -1,0 +1,30 @@
+
+Requesting state for world [ICAI_A501]...
+
+Available models:
+    - aula_501
+    - door
+    - checkpoint1
+    - checkpoint2
+    - checkpoint3
+    - checkpoint4
+    - checkpoint5
+    - table11
+    - table12
+    - table13
+    - table14
+    - table15
+    - table21
+    - table22
+    - chair1
+    - chair2
+    - chair3
+    - chair4
+    - chair5
+    - chair6
+    - chair8
+    - chair9
+    - chair10
+    - chair11
+    - chair12
+    - chair13

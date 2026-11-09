@@ -1,0 +1,19 @@
+libEGL warning: pci id for fd 93: 10de:25a0, driver (null)
+
+pci id for fd 94: 10de:25a0, driver (null)
+pci id for fd 95: 10de:25a0, driver (null)
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: pci id for fd 93: 10de:25a0, driver (null)
+
+pci id for fd 94: 10de:25a0, driver (null)
+pci id for fd 95: 10de:25a0, driver (null)
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: pci id for fd 93: 10de:25a0, driver (null)
+
+/opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:201:in `kill': No such process (Errno::ESRCH)
+	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:201:in `killProcess'
+	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:570:in `handle_signal'
+	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:579:in `block in execute'
+	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:584:in `wait2'
+	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:584:in `execute'
+	from /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz:317:in `<main>'

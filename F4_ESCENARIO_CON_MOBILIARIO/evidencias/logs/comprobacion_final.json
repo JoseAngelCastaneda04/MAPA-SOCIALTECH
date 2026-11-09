@@ -1,0 +1,232 @@
+{
+ "A_paredes": {
+  "mismo_tamano": true,
+  "misma_resolucion": true,
+  "mismo_origen": true,
+  "celdas_base_liberadas": 0,
+  "celdas_nuevas": 33212,
+  "nuevas_distintas_de_capa": 0,
+  "celdas_pared_base": 105509
+ },
+ "B_puertas": [
+  {
+   "nombre": "Puerta WC izq. (arco r=0.81)",
+   "hueco_base_m": 0.91,
+   "hueco_actualizado_m": 0.91
+  },
+  {
+   "nombre": "Puerta WC der. (arco r=0.81)",
+   "hueco_base_m": 0.91,
+   "hueco_actualizado_m": 0.91
+  },
+  {
+   "nombre": "Puerta dorm.1 (arco r=0.81)",
+   "hueco_base_m": 0.91,
+   "hueco_actualizado_m": 0.91
+  },
+  {
+   "nombre": "Puerta dorm.2 (arco r=0.81)",
+   "hueco_base_m": 0.91,
+   "hueco_actualizado_m": 0.91
+  },
+  {
+   "nombre": "Puerta dorm.3 (arco r=0.81)",
+   "hueco_base_m": 1.01,
+   "hueco_actualizado_m": 1.01
+  },
+  {
+   "nombre": "Puerta entrada (arco r=0.91)",
+   "hueco_base_m": 1.54,
+   "hueco_actualizado_m": 1.54
+  }
+ ],
+ "CD_objetos": [
+  {
+   "id": "mesa_1",
+   "modelo": "mesa1",
+   "x": 8.9,
+   "y": -4.9,
+   "yaw_deg": 0,
+   "distancia_min_a_pared_m": 1.01,
+   "solapa_pared": false,
+   "IoU_ref_vs_capa": 0.9749,
+   "bbox_ref_m": [
+    8.03,
+    -5.3,
+    9.78,
+    -4.51
+   ],
+   "bbox_capa_m": [
+    8.03,
+    -5.29,
+    9.77,
+    -4.51
+   ],
+   "error_bbox_max_m": 0.01
+  },
+  {
+   "id": "mesa_2",
+   "modelo": "mesa2",
+   "x": 8.9,
+   "y": -6.35,
+   "yaw_deg": 90,
+   "distancia_min_a_pared_m": 0.23,
+   "solapa_pared": false,
+   "IoU_ref_vs_capa": 0.9758,
+   "bbox_ref_m": [
+    7.93,
+    -6.61,
+    9.88,
+    -6.1
+   ],
+   "bbox_capa_m": [
+    7.92,
+    -6.61,
+    9.88,
+    -6.09
+   ],
+   "error_bbox_max_m": 0.01
+  },
+  {
+   "id": "silla_N",
+   "modelo": "silla",
+   "x": 8.9,
+   "y": -4.15,
+   "yaw_deg": 0,
+   "distancia_min_a_pared_m": 1.66,
+   "solapa_pared": false,
+   "IoU_ref_vs_capa": 0.9413,
+   "bbox_ref_m": [
+    8.68,
+    -4.42,
+    9.13,
+    -3.89
+   ],
+   "bbox_capa_m": [
+    8.67,
+    -4.41,
+    9.13,
+    -3.88
+   ],
+   "error_bbox_max_m": 0.01
+  },
+  {
+   "id": "silla_S",
+   "modelo": "silla",
+   "x": 8.9,
+   "y": -5.65,
+   "yaw_deg": 180,
+   "distancia_min_a_pared_m": 0.92,
+   "solapa_pared": false,
+   "IoU_ref_vs_capa": 0.9778,
+   "bbox_ref_m": [
+    8.68,
+    -5.92,
+    9.13,
+    -5.39
+   ],
+   "bbox_capa_m": [
+    8.67,
+    -5.92,
+    9.13,
+    -5.39
+   ],
+   "error_bbox_max_m": 0.01
+  },
+  {
+   "id": "silla_W",
+   "modelo": "silla",
+   "x": 7.75,
+   "y": -4.9,
+   "yaw_deg": 90,
+   "distancia_min_a_pared_m": 0.48,
+   "solapa_pared": false,
+   "IoU_ref_vs_capa": 0.9413,
+   "bbox_ref_m": [
+    7.49,
+    -5.13,
+    8.02,
+    -4.68
+   ],
+   "bbox_capa_m": [
+    7.48,
+    -5.13,
+    8.01,
+    -4.67
+   ],
+   "error_bbox_max_m": 0.01
+  },
+  {
+   "id": "silla_E",
+   "modelo": "silla",
+   "x": 10.05,
+   "y": -4.9,
+   "yaw_deg": -90,
+   "distancia_min_a_pared_m": 0.46,
+   "solapa_pared": false,
+   "IoU_ref_vs_capa": 0.9621,
+   "bbox_ref_m": [
+    9.79,
+    -5.13,
+    10.33,
+    -4.68
+   ],
+   "bbox_capa_m": [
+    9.79,
+    -5.13,
+    10.32,
+    -4.67
+   ],
+   "error_bbox_max_m": 0.01
+  },
+  {
+   "id": "caja_1",
+   "modelo": "caja",
+   "x": 10.2,
+   "y": -6.3,
+   "yaw_deg": 0,
+   "distancia_min_a_pared_m": 0.33,
+   "solapa_pared": false,
+   "IoU_ref_vs_capa": 0.9524,
+   "bbox_ref_m": [
+    10.0,
+    -6.51,
+    10.41,
+    -6.1
+   ],
+   "bbox_capa_m": [
+    10.0,
+    -6.5,
+    10.41,
+    -6.09
+   ],
+   "error_bbox_max_m": 0.01
+  },
+  {
+   "id": "papelera_1",
+   "modelo": "papelera",
+   "x": 7.55,
+   "y": -6.45,
+   "yaw_deg": 0,
+   "distancia_min_a_pared_m": 0.18,
+   "solapa_pared": false,
+   "IoU_ref_vs_capa": 0.9579,
+   "bbox_ref_m": [
+    7.35,
+    -6.66,
+    7.76,
+    -6.25
+   ],
+   "bbox_capa_m": [
+    7.35,
+    -6.66,
+    7.76,
+    -6.24
+   ],
+   "error_bbox_max_m": 0.01
+  }
+ ],
+ "D_global": {
+  "celdas_capa": 33212
+ }
+}

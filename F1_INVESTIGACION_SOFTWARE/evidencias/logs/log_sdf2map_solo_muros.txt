@@ -1,0 +1,3 @@
+[sdf2map] sampled 96710 points from 1 geometries in 2 models (1 geometries skipped)
+[sdf2map] wrote 60607 points -> pruebas/sdf2map/vivienda.pcd
+[sdf2map] occupancy grid: 203x163 cells (0.05 m/cell), 3040 occupied -> pruebas/sdf2map/vivienda_map.pgm + pruebas/sdf2map/vivienda_map.yaml

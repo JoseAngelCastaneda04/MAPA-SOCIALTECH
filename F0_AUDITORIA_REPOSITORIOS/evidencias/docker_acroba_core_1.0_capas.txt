@@ -1,0 +1,134 @@
+# javicensaez/acroba_core:1.0 — historial de capas según API de Docker Hub (consultado 2026-11-07, imagen NO descargada)
+# amd64 linux sha256:54de71574ae8e84f16ceb83c0a5c39f30f6afec0e266f70ba52a25e75976b86d tamaño 5863008499
+000      28.6 MB  ADD file:064c61cc9ceed678689d2eaf3b3e61ec3bf5baf9288e5a7febcbab28c6adbfb6 in / 
+001       0.0 MB   CMD ["bash"]
+002       0.0 MB  ENV NVARCH=x86_64
+003       0.0 MB  ENV NVIDIA_REQUIRE_CUDA=cuda>=11.4 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 brand=tesla,driver>=450,driver<451 brand=tesla,driver>=460,driver<461
+004       0.0 MB  ENV NV_CUDA_CUDART_VERSION=11.4.108-1
+005       0.0 MB  ENV NV_CUDA_COMPAT_PACKAGE=cuda-compat-11-4
+006       0.0 MB  ARG TARGETARCH
+007       0.0 MB  LABEL maintainer=NVIDIA CORPORATION <cudatools@nvidia.com>
+008       7.9 MB  RUN |1 TARGETARCH=amd64 /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     gnupg2 curl ca-certificates &&     curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/${NVARCH}/3bf863cc.pub | apt-key add - &&     echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/${NVARCH} /" > /etc/apt/sources.list.d/cuda.list &&     if [ ! -z ${NV_ML_REPO_ENABLED} ]; then echo "deb ${NV_ML_REPO_URL} /" > /etc/apt/sources.list.d/nvidia-ml.list; fi &&     apt-get purge --autoremove -y curl     && rm -rf /var/lib/apt/lists/* # buildkit
+009       0.0 MB  ENV CUDA_VERSION=11.4.2
+010      11.9 MB  RUN |1 TARGETARCH=amd64 /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     cuda-cudart-11-4=${NV_CUDA_CUDART_VERSION}     ${NV_CUDA_COMPAT_PACKAGE}     && ln -s cuda-11.4 /usr/local/cuda &&     rm -rf /var/lib/apt/lists/* # buildkit
+011       0.0 MB  RUN |1 TARGETARCH=amd64 /bin/sh -c echo "/usr/local/nvidia/lib" >> /etc/ld.so.conf.d/nvidia.conf     && echo "/usr/local/nvidia/lib64" >> /etc/ld.so.conf.d/nvidia.conf # buildkit
+012       0.0 MB  ENV PATH=/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+013       0.0 MB  ENV LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+014       0.0 MB  COPY NGC-DL-CONTAINER-LICENSE / # buildkit
+015       0.0 MB  ENV NVIDIA_VISIBLE_DEVICES=all
+016       0.0 MB  ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
+017       0.0 MB  ENV NV_CUDA_LIB_VERSION=11.4.2-1
+018       0.0 MB  ENV NV_NVTX_VERSION=11.4.120-1
+019       0.0 MB  ENV NV_LIBNPP_VERSION=11.4.0.110-1
+020       0.0 MB  ENV NV_LIBNPP_PACKAGE=libnpp-11-4=11.4.0.110-1
+021       0.0 MB  ENV NV_LIBCUSPARSE_VERSION=11.6.0.120-1
+022       0.0 MB  ENV NV_LIBCUBLAS_PACKAGE_NAME=libcublas-11-4
+023       0.0 MB  ENV NV_LIBCUBLAS_VERSION=11.6.1.51-1
+024       0.0 MB  ENV NV_LIBCUBLAS_PACKAGE=libcublas-11-4=11.6.1.51-1
+025       0.0 MB  ENV NV_LIBNCCL_PACKAGE_NAME=libnccl2
+026       0.0 MB  ENV NV_LIBNCCL_PACKAGE_VERSION=2.11.4-1
+027       0.0 MB  ENV NCCL_VERSION=2.11.4-1
+028       0.0 MB  ENV NV_LIBNCCL_PACKAGE=libnccl2=2.11.4-1+cuda11.4
+029       0.0 MB  ARG TARGETARCH
+030       0.0 MB  LABEL maintainer=NVIDIA CORPORATION <cudatools@nvidia.com>
+031    1302.7 MB  RUN |1 TARGETARCH=amd64 /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     cuda-libraries-11-4=${NV_CUDA_LIB_VERSION}     ${NV_LIBNPP_PACKAGE}     cuda-nvtx-11-4=${NV_NVTX_VERSION}     libcusparse-11-4=${NV_LIBCUSPARSE_VERSION}     ${NV_LIBCUBLAS_PACKAGE}     ${NV_LIBNCCL_PACKAGE}     && rm -rf /var/lib/apt/lists/* # buildkit
+032       0.1 MB  RUN |1 TARGETARCH=amd64 /bin/sh -c apt-mark hold ${NV_LIBCUBLAS_PACKAGE_NAME} ${NV_LIBNCCL_PACKAGE_NAME} # buildkit
+033       0.0 MB  ENV NV_CUDA_LIB_VERSION=11.4.2-1
+034       0.0 MB  ENV NV_CUDA_CUDART_DEV_VERSION=11.4.108-1
+035       0.0 MB  ENV NV_NVML_DEV_VERSION=11.4.120-1
+036       0.0 MB  ENV NV_LIBCUSPARSE_DEV_VERSION=11.6.0.120-1
+037       0.0 MB  ENV NV_LIBNPP_DEV_VERSION=11.4.0.110-1
+038       0.0 MB  ENV NV_LIBNPP_DEV_PACKAGE=libnpp-dev-11-4=11.4.0.110-1
+039       0.0 MB  ENV NV_LIBCUBLAS_DEV_VERSION=11.6.1.51-1
+040       0.0 MB  ENV NV_LIBCUBLAS_DEV_PACKAGE_NAME=libcublas-dev-11-4
+041       0.0 MB  ENV NV_LIBCUBLAS_DEV_PACKAGE=libcublas-dev-11-4=11.6.1.51-1
+042       0.0 MB  ENV NV_LIBNCCL_DEV_PACKAGE_NAME=libnccl-dev
+043       0.0 MB  ENV NV_LIBNCCL_DEV_PACKAGE_VERSION=2.11.4-1
+044       0.0 MB  ENV NCCL_VERSION=2.11.4-1
+045       0.0 MB  ENV NV_LIBNCCL_DEV_PACKAGE=libnccl-dev=2.11.4-1+cuda11.4
+046       0.0 MB  ARG TARGETARCH
+047       0.0 MB  LABEL maintainer=NVIDIA CORPORATION <cudatools@nvidia.com>
+048    1711.7 MB  RUN |1 TARGETARCH=amd64 /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     libtinfo5 libncursesw5     cuda-cudart-dev-11-4=${NV_CUDA_CUDART_DEV_VERSION}     cuda-command-line-tools-11-4=${NV_CUDA_LIB_VERSION}     cuda-minimal-build-11-4=${NV_CUDA_LIB_VERSION}     cuda-libraries-dev-11-4=${NV_CUDA_LIB_VERSION}     cuda-nvml-dev-11-4=${NV_NVML_DEV_VERSION}     ${NV_LIBNPP_DEV_PACKAGE}     libcusparse-dev-11-4=${NV_LIBCUSPARSE_DEV_VERSION}     ${NV_LIBCUBLAS_DEV_PACKAGE}     ${NV_LIBNCCL_DEV_PACKAGE}     && rm -rf /var/lib/apt/lists/* # buildkit
+049       0.1 MB  RUN |1 TARGETARCH=amd64 /bin/sh -c apt-mark hold ${NV_LIBCUBLAS_DEV_PACKAGE_NAME} ${NV_LIBNCCL_DEV_PACKAGE_NAME} # buildkit
+050       0.0 MB  ENV LIBRARY_PATH=/usr/local/cuda/lib64/stubs
+051       0.0 MB  LABEL maintainer=NVIDIA CORPORATION <cudatools@nvidia.com>
+052       7.2 MB  RUN /bin/sh -c dpkg --add-architecture i386 &&     apt-get update && apt-get install -y --no-install-recommends         libxau6 libxau6:i386         libxdmcp6 libxdmcp6:i386         libxcb1 libxcb1:i386         libxext6 libxext6:i386         libx11-6 libx11-6:i386 &&     rm -rf /var/lib/apt/lists/* # buildkit
+053       0.0 MB  ENV NVIDIA_VISIBLE_DEVICES=all
+054       0.0 MB  ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics,compat32,utility
+055       0.0 MB  RUN /bin/sh -c echo "/usr/local/nvidia/lib" >> /etc/ld.so.conf.d/nvidia.conf &&     echo "/usr/local/nvidia/lib64" >> /etc/ld.so.conf.d/nvidia.conf # buildkit
+056       0.0 MB  COPY NGC-DL-CONTAINER-LICENSE / # buildkit
+057       0.0 MB  ENV LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+058       0.0 MB  LABEL maintainer=NVIDIA CORPORATION <cudatools@nvidia.com>
+059      92.9 MB  RUN /bin/sh -c apt-get update && apt-get install -y --no-install-recommends         libglvnd0 libglvnd0:i386         libgl1 libgl1:i386         libglx0 libglx0:i386         libegl1 libegl1:i386         libgles2 libgles2:i386 &&     rm -rf /var/lib/apt/lists/* # buildkit
+060       0.0 MB  COPY 10_nvidia.json /usr/share/glvnd/egl_vendor.d/10_nvidia.json # buildkit
+061       4.5 MB  RUN /bin/sh -c apt-get update && apt-get install -y --no-install-recommends         pkg-config         libglvnd-dev libglvnd-dev:i386         libgl1-mesa-dev libgl1-mesa-dev:i386         libegl1-mesa-dev libegl1-mesa-dev:i386         libgles2-mesa-dev libgles2-mesa-dev:i386 &&     rm -rf /var/lib/apt/lists/* # buildkit
+062       0.0 MB   ARG UBUNTU_RELEASE=20.04
+063       0.0 MB   ARG CUDA_VERSION=11.4
+064       0.0 MB   ENV NV_CUDNN_VERSION=8.2.4.15
+065       0.0 MB   ENV NV_CUDNN_PACKAGE_NAME=libcudnn8
+066       0.0 MB   ENV NV_CUDNN_PACKAGE=libcudnn8=8.2.4.15-1+cuda11.4
+067       0.0 MB   ENV NV_CUDNN_DEV_PACKAGE=libcudnn8-dev=8.2.4.15-1+cuda11.4
+068       0.0 MB   ARG NVIDIA_VISIBLE_DEVICES=all
+069       0.0 MB   ARG DEBIAN_FRONTEND=noninteractive
+070       0.0 MB   ENV NVIDIA_DRIVER_CAPABILITIES=all
+071       0.0 MB   ENV PULSE_SERVER=127.0.0.1:4713
+072       0.0 MB   ENV TZ=UTC
+073       0.0 MB   ENV SIZEW=1920
+074       0.0 MB   ENV SIZEH=1080
+075       0.0 MB   ENV REFRESH=60
+076       0.0 MB   ENV DPI=96
+077       0.0 MB   ENV CDEPTH=24
+078       0.0 MB   ENV PASSWD=mypasswd
+079       0.0 MB   ENV NOVNC_ENABLE=true
+080       0.0 MB   ENV WEBRTC_ENCODER=nvh264enc
+081       0.0 MB   ENV WEBRTC_ENABLE_RESIZE=true
+082       0.0 MB   ENV ENABLE_AUDIO=true
+083       0.0 MB   ENV ENABLE_BASIC_AUTH=true
+084       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c apt-get clean &&     apt-key adv --fetch-keys "https://developer.download.nvidia.com/compute/cuda/repos/$(cat /etc/os-release | grep '^ID=' | awk -F'=' '{print $2}')$(cat /etc/os-release | grep '^VERSION_ID=' | awk -F'=' '{print $2}' | sed 's/[^0-9]*//g')/x86_64/3bf863cc.pub" &&     rm -rf /var/lib/apt/lists/*
+085       6.6 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c apt-get clean &&     apt-get update && apt-get install --no-install-recommends -y locales &&     rm -rf /var/lib/apt/lists/* &&     locale-gen en_US.UTF-8
+086       0.0 MB   ENV LANG=en_US.UTF-8
+087       0.0 MB   ENV LANGUAGE=en_US:en
+088       0.0 MB   ENV LC_ALL=en_US.UTF-8
+089     862.6 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     ${NV_CUDNN_PACKAGE}     && apt-mark hold ${NV_CUDNN_PACKAGE_NAME} ${NV_CUDNN_DEV_PACKAGE}     && rm -rf /var/lib/apt/lists/*
+090     854.2 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c dpkg --add-architecture i386 &&     apt-get update && apt-get install --no-install-recommends -y         software-properties-common         apt-transport-https         apt-utils         build-essential         ca-certificates         cups-filters         cups-common         cups-pdf         curl         file         wget         bzip2         gzip         p7zip-full         xz-utils         zip         unzip         zstd         gcc         git         jq         make         python         python-numpy         python3         python3-cups         python3-numpy         mlocate         nano         vim         htop         firefox         transmission-gtk         qpdfview         xarchiver         brltty         brltty-x11         desktop-file-utils         fonts-dejavu-core         fonts-freefont-ttf         fonts-noto         fonts-noto-cjk         fonts-noto-cjk-extra         fonts-noto-color-emoji         fonts-noto-hinted         fonts-noto-mono         fonts-opensymbol         fonts-symbola         fonts-ubuntu         gucharmap         mpd         onboard         orage         parole         policykit-desktop-privileges         libpulse0         pulseaudio         pavucontrol         ristretto         supervisor         thunar         thunar-volman         thunar-archive-plugin         thunar-media-tags-plugin         net-tools         libgtk-3-bin         vainfo         vdpauinfo         mesa-utils         mesa-utils-extra         xdg-utils         dbus-x11         libdbus-c++-1-0v5         dmz-cursor-theme         numlockx         lubuntu-desktop         lxde         xcursor-themes         xvfb  &&     curl -fsSL -o /tmp/vdpau-va-driver.deb "https://launchpad.net/~saiarcot895/+archive/ubuntu/chromium-dev/+files/vdpau-va-driver_0.7.4-6ubuntu2~ppa1~18.04.1_amd64.deb" && apt-get install --no-install-recommends -y /tmp/vdpau-va-driver.deb && rm -rf /tmp/* &&     rm -rf /var/lib/apt/lists/*
+091       1.6 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c if [ "${UBUNTU_RELEASE}" = "18.04" ]; then apt-get update && apt-get install --no-install-recommends -y libvulkan1 vulkan-utils; else apt-get update && apt-get install --no-install-recommends -y libvulkan1 vulkan-tools; fi &&     rm -rf /var/lib/apt/lists/* &&     VULKAN_API_VERSION=$(dpkg -s libvulkan1 | grep -oP 'Version: [0-9|\.]+' | grep -oP '[0-9]+(\.[0-9]+)(\.[0-9]+)') &&     mkdir -p /etc/vulkan/icd.d/ &&     echo "{\n    \"file_format_version\" : \"1.0.0\",\n    \"ICD\": {\n        \"library_path\": \"libGLX_nvidia.so.0\",\n        \"api_version\" : \"${VULKAN_API_VERSION}\"\n    }\n}" > /etc/vulkan/icd.d/nvidia_icd.json
+092       5.7 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c VIRTUALGL_VERSION=$(curl -fsSL "https://api.github.com/repos/VirtualGL/virtualgl/releases/67016359" | jq -r '.tag_name' | sed 's/[^0-9\.\-]*//g') &&     curl -fsSL -O https://sourceforge.net/projects/virtualgl/files/virtualgl_${VIRTUALGL_VERSION}_amd64.deb &&     curl -fsSL -O https://sourceforge.net/projects/virtualgl/files/virtualgl32_${VIRTUALGL_VERSION}_amd64.deb &&     apt-get update && apt-get install -y --no-install-recommends ./virtualgl_${VIRTUALGL_VERSION}_amd64.deb ./virtualgl32_${VIRTUALGL_VERSION}_amd64.deb &&     rm virtualgl_${VIRTUALGL_VERSION}_amd64.deb virtualgl32_${VIRTUALGL_VERSION}_amd64.deb &&     rm -rf /var/lib/apt/lists/* &&     chmod u+s /usr/lib/libvglfaker.so &&     chmod u+s /usr/lib/libdlfaker.so &&     chmod u+s /usr/lib32/libvglfaker.so &&     chmod u+s /usr/lib32/libdlfaker.so &&     chmod u+s /usr/lib/i386-linux-gnu/libvglfaker.so &&     chmod u+s /usr/lib/i386-linux-gnu/libdlfaker.so
+093     150.8 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c apt-get update && apt-get install --no-install-recommends -y         build-essential         python3-pip         python3-dev         python3-gi         python3-setuptools         python3-wheel         tzdata         sudo         udev         xclip         x11-utils         xdotool         wmctrl         jq         gdebi-core         x11-xserver-utils         xserver-xorg-core         libopus0         libgdk-pixbuf2.0-0         libsrtp2-1         libxdamage1         libxml2-dev         libwebrtc-audio-processing1         libcairo-gobject2         pulseaudio         libpulse0         libpangocairo-1.0-0         libgirepository1.0-dev         libjpeg-dev         zlib1g-dev         x264 &&     rm -rf /var/lib/apt/lists/* &&     cd /opt &&     SELKIES_VERSION=$(curl -fsSL "https://api.github.com/repos/selkies-project/selkies-gstreamer/releases/latest" | jq -r '.tag_name' | sed 's/[^0-9\.\-]*//g') &&     curl -fsSL "https://github.com/selkies-project/selkies-gstreamer/releases/download/v${SELKIES_VERSION}/selkies-gstreamer-v${SELKIES_VERSION}-ubuntu${UBUNTU_RELEASE}.tgz" | tar -zxf - &&     curl -O -fsSL "https://github.com/selkies-project/selkies-gstreamer/releases/download/v${SELKIES_VERSION}/selkies_gstreamer-${SELKIES_VERSION}-py3-none-any.whl" && pip3 install "selkies_gstreamer-${SELKIES_VERSION}-py3-none-any.whl" && rm -f "selkies_gstreamer-${SELKIES_VERSION}-py3-none-any.whl" &&     pip3 install -e "git+https://github.com/selkies-project/python-xlib.git@add-xfixes-cursor#egg=python-xlib" &&     curl -fsSL "https://github.com/selkies-project/selkies-gstreamer/releases/download/v${SELKIES_VERSION}/selkies-gstreamer-web-v${SELKIES_VERSION}.tgz" | tar -zxf - &&     cd /usr/local/cuda/lib64 && sudo find . -maxdepth 1 -type l -name "*libnvrtc.so.*" -exec sh -c 'ln -sf $(basename {}) libnvrtc.so' \;
+094      43.2 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c apt-get update && apt-get install --no-install-recommends -y         autoconf         automake         autotools-dev         chrpath         debhelper         jq         python         python-numpy         python3         python3-numpy         libc6-dev         libcairo2-dev         libjpeg-turbo8-dev         libssl-dev         libv4l-dev         libvncserver-dev         libtool-bin         libxdamage-dev         libxinerama-dev         libxrandr-dev         libxss-dev         libxtst-dev         libavahi-client-dev         terminator         gedit  &&     rm -rf /var/lib/apt/lists/* &&     X11VNC_VERSION=$(curl -fsSL "https://api.github.com/repos/LibVNC/x11vnc/releases/latest" | jq -r '.tag_name' | sed 's/[^0-9\.\-]*//g') &&     curl -fsSL https://github.com/LibVNC/x11vnc/archive/${X11VNC_VERSION}.tar.gz | tar -xzf - -C /tmp &&     cd /tmp/x11vnc-${X11VNC_VERSION} && autoreconf -fi && ./configure && make install && cd / && rm -rf /tmp/* &&     NOVNC_VERSION=$(curl -fsSL "https://api.github.com/repos/noVNC/noVNC/releases/latest" | jq -r '.tag_name' | sed 's/[^0-9\.\-]*//g') &&     curl -fsSL https://github.com/novnc/noVNC/archive/v${NOVNC_VERSION}.tar.gz | tar -xzf - -C /opt &&     mv /opt/noVNC-${NOVNC_VERSION} /opt/noVNC &&     ln -s /opt/noVNC/vnc.html /opt/noVNC/index.html &&     git clone https://github.com/novnc/websockify /opt/noVNC/utils/websockify
+095       1.4 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c apt-get remove lubuntu-update-notifier -y
+096       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c apt-get update && apt-get install --no-install-recommends -y         sudo &&     rm -rf /var/lib/apt/lists/* &&     groupadd -g 1000 ubuntu &&     useradd -ms /bin/bash ubuntu -u 1000 -g 1000 &&     usermod -a -G adm,audio,dialout,dip,fax,floppy,input,lp,lpadmin,plugdev,sudo,tape,tty,video,voice ubuntu &&     echo "ubuntu ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers &&     chown ubuntu:ubuntu /home/ubuntu &&     echo "ubuntu:${PASSWD}" | chpasswd &&     ln -snf "/usr/share/zoneinfo/$TZ" /etc/localtime && echo "$TZ" > /etc/timezone
+097       0.0 MB  COPY file:79159637a9d11f636c3384a3c99ffa2fad650e71dfe861c565e0cca051919fd4 in /etc/entrypoint.sh 
+098       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c chmod 755 /etc/entrypoint.sh
+099       0.0 MB  COPY file:4a7713c123a8a7191eb934647986f7a2fd95b616d07911bb2377505c12bbd045 in /etc/selkies-gstreamer-entrypoint.sh 
+100       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c chmod 755 /etc/selkies-gstreamer-entrypoint.sh
+101       0.0 MB  COPY file:7c17377056d3fe71d90e09164fa38b7fc42ae3d580918338d0c803c61ec6609f in /etc/supervisord.conf 
+102       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c chmod 755 /etc/supervisord.conf
+103       0.0 MB   EXPOSE 6080
+104       0.0 MB  COPY file:39430e1882f5b74fa9dcdc9bf2fa947275bf0d990d816bf90a30e7235dbd7507 in /usr/share/lxde/wallpapers/fondo.png 
+105       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c chmod 755 /etc/entrypoint.sh
+106       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c /bin/bash -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+107       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c /bin/bash -c "curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key add -"
+108      39.5 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c sudo apt-get update || echo
+109     709.9 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c apt-get install -y ros-noetic-desktop-full
+110       2.3 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c apt-get install -y wget git nano python3-pip python3-catkin-tools python3-osrf-pycommon python3-rosdep
+111       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c pip install -U rosdep
+112      17.5 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c apt-get install -y python3-rosinstall python3-rosinstall-generator python3-wstool build-essential python3-vcstool
+113       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c apt-get install -y python3-catkin-tools python3-osrf-pycommon
+114       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c /bin/bash -c "echo 'export HOME=/root' >> /root/.bashrc && source /root/.bashrc"
+115       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c /bin/bash -c "echo 'source /opt/ros/noetic/setup.bash' >> /root/.bashrc"
+116       0.0 MB   USER ubuntu
+117       0.0 MB   ENV USER=ubuntu
+118       0.0 MB  WORKDIR /home/ubuntu
+119       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c mkdir -p /home/ubuntu/.vnc
+120       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c mkdir -p /home/ubuntu/Desktop
+121       0.0 MB  COPY file:a1b01361a9b5de6336b871f38a6bc4f889b822a180d766d464b464b612a6c394 in /home/ubuntu/Desktop 
+122       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c mkdir -p /home/ubuntu/.config/terminator
+123       0.0 MB  COPY file:c91c971384d50785e5016511ecb3700256b55ac1e8e95887b1d94904bc188e5d in /home/ubuntu/.config/terminator/config 
+124       0.0 MB  COPY file:a5b3db41b890475fa9ca64e68b75a873cadbf44a850df48f4aa677994708f4f6 in /home/ubuntu/Desktop 
+125       0.0 MB  COPY file:a821a129cb510c491566ecca9ba278d690f95bf51297f68dee1ee1739a22f1a2 in /home/ubuntu/Desktop 
+126       0.0 MB  COPY file:4a14c2acc633fbed4c30a7c891f6391657e2663ec66f6cd222d2e677b4585f02 in /home/ubuntu/Desktop 
+127       0.0 MB  COPY file:d8caf08c0ce9b978153f01a559683329b72aa40c79f685437d16f6b55495de8b in /home/ubuntu/Desktop 
+128       0.0 MB  COPY file:f9056684132ca5c2859fff15c8fd9f5a135e078c07a3abaf6de7b28a36a1e111 in /home/ubuntu/.config/pcmanfm/LXDE/desktop-items-0.conf 
+129       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c /bin/bash -c "echo 'export HOME=/home/ubuntu' >> /home/ubuntu/.bashrc && source /home/ubuntu/.bashrc"
+130       0.0 MB  |2 DEBIAN_FRONTEND=noninteractive UBUNTU_RELEASE=20.04 /bin/sh -c /bin/bash -c "echo 'source /opt/ros/noetic/setup.bash' >> /home/ubuntu/.bashrc"
+131       0.0 MB   ENTRYPOINT ["/usr/bin/supervisord"]

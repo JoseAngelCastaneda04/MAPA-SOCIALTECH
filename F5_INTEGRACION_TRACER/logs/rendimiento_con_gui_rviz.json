@@ -1,0 +1,54 @@
+[
+ {
+  "fase": "reposo",
+  "cpu_pct_por_proceso": {
+   "ruby": 255.0,
+   "ros2": 0.0,
+   "parameter_bridge": 36.8,
+   "robot_state_publisher": 13.7,
+   "static_transform_publisher": 7.0,
+   "map_server": 7.6,
+   "lifecycle_manager": 7.7,
+   "Xephyr": 2.2
+  },
+  "ram_MB_por_proceso": {
+   "ruby": 1491,
+   "ros2": 73,
+   "parameter_bridge": 114,
+   "robot_state_publisher": 36,
+   "static_transform_publisher": 34,
+   "map_server": 52,
+   "lifecycle_manager": 39,
+   "Xephyr": 152
+  },
+  "rtf": 0.9999740006759824,
+  "cpu_total_pct": 330.0,
+  "ram_total_MB": 1990
+ },
+ {
+  "fase": "robot girando (cmd_vel 10 Hz)",
+  "cpu_pct_por_proceso": {
+   "ruby": 258.3,
+   "ros2": 0.0,
+   "parameter_bridge": 37.1,
+   "robot_state_publisher": 13.7,
+   "static_transform_publisher": 7.0,
+   "map_server": 7.6,
+   "lifecycle_manager": 7.7,
+   "Xephyr": 1.9
+  },
+  "ram_MB_por_proceso": {
+   "ruby": 1491,
+   "ros2": 73,
+   "parameter_bridge": 119,
+   "robot_state_publisher": 36,
+   "static_transform_publisher": 34,
+   "map_server": 52,
+   "lifecycle_manager": 39,
+   "Xephyr": 152
+  },
+  "rtf": 0.9996671108520863,
+  "cpu_total_pct": 333.3,
+  "ram_total_MB": 1996
+ }
+]

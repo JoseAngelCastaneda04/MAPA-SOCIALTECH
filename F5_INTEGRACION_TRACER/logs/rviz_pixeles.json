@@ -1,0 +1,19 @@
+{
+ "calibracion": {
+  "iou_muros_mapa_vs_pixeles": 0.9118602072114376,
+  "centro_px": [
+   1023.5,
+   564.5
+  ],
+  "escala_px_m": 110.0,
+  "resolucion_px_m": 0.00909090909090909
+ },
+ "puntos_lidar_detectados": 250,
+ "distancia_punto_a_celda_ocupada_m": {
+  "mediana": 0.0,
+  "p90": 0.01,
+  "max": 0.02,
+  "fraccion_dentro_2cm": 1.0,
+  "fraccion_dentro_5cm": 1.0
+ }
+}

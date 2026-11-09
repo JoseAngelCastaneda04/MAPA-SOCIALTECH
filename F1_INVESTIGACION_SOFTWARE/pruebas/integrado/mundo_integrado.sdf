@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- Prueba F1: modelo de muros (map2sdf) + mesa y silla de ICAI_A501 (2025) vía <include>. -->
+<sdf version="1.9">
+  <world name="vivienda_integrada">
+    <physics name="1ms" type="ignored"><max_step_size>0.001</max_step_size><real_time_factor>1.0</real_time_factor></physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <light type="directional" name="sun"><pose>0 0 10 0 0 0</pose><direction>-0.5 0.1 -0.9</direction><diffuse>1 1 1 1</diffuse></light>
+    <model name="suelo"><static>true</static><pose>5 4 0 0 0 0</pose><link name="l">
+      <collision name="c"><geometry><plane><normal>0 0 1</normal><size>30 28</size></plane></geometry></collision>
+      <visual name="v"><geometry><plane><normal>0 0 1</normal><size>30 28</size></plane></geometry></visual></link></model>
+    <include><name>muros</name><uri>model://vivienda_walls</uri></include>
+    <include><name>mesa1</name><uri>model://table1</uri><static>true</static><pose>7.5 6 0 0 0 1.5708</pose></include>
+    <include><name>silla1</name><uri>model://chair</uri><static>true</static><pose>7.5 5.2 0 0 0 0</pose></include>
+  </world>
+</sdf>

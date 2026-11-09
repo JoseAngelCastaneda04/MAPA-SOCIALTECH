@@ -1,0 +1,10 @@
+mundo | tiempo total (carga + 500 it) s | RAM max MB | errores/avisos
+piso_amueblado | 2.67 | 175 | 0
+piso_amueblado | 2.68 | 174 | 0
+piso_amueblado | 2.68 | 174 | 0
+piso_amueblado_malla | 3.45 | 405 | 0
+piso_amueblado_malla | 3.41 | 405 | 0
+piso_amueblado_malla | 3.41 | 406 | 0
+base_f2 | 2.63 | 147 | 0
+base_f2 | 2.63 | 147 | 0
+base_f2 | 2.66 | 147 | 0

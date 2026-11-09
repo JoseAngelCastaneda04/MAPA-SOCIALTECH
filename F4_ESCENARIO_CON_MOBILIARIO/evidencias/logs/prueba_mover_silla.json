@@ -1,0 +1,74 @@
+{
+ "1_posicion_inicial": {
+  "x": 7.75,
+  "y": -4.9,
+  "yaw_deg": 90
+ },
+ "2_posicion_nueva": {
+  "x": 9.9,
+  "y": -3.3,
+  "yaw_deg": 135
+ },
+ "2_zona_libre": {
+  "solapa_pared_base": false,
+  "solapa_otro_objeto": false,
+  "distancia_min_a_pared_m": 0.834
+ },
+ "3_gazebo_pose": {
+  "x": 9.9,
+  "y": -3.3,
+  "yaw_deg": 135.0,
+  "error_xy_m": 0.0,
+  "error_yaw_deg": 0.0
+ },
+ "4_silla_en_mapa_nuevo": {
+  "fraccion_huella_nueva_ocupada": 0.986,
+  "fraccion_huella_nueva_ocupada_en_mapa_antiguo": 0.0
+ },
+ "5_ocupacion_antigua_desaparece": {
+  "celdas_nucleo_antiguo": 1961,
+  "ocupadas_en_mapa_antiguo": 1961,
+  "ocupadas_en_mapa_nuevo": 0
+ },
+ "6_paredes": {
+  "celdas_pared_base_liberadas_antes": 0,
+  "celdas_pared_base_liberadas_despues": 0,
+  "celdas_cambiadas_total": 4814,
+  "celdas_cambiadas_fuera_de_las_dos_huellas": 0,
+  "celdas_cambiadas_sobre_pared_base": 0
+ },
+ "7_puertas_m": [
+  {
+   "puerta": "Puerta WC izq. (arco r=0.81)",
+   "antes": 0.91,
+   "despues": 0.91
+  },
+  {
+   "puerta": "Puerta WC der. (arco r=0.81)",
+   "antes": 0.91,
+   "despues": 0.91
+  },
+  {
+   "puerta": "Puerta dorm.1 (arco r=0.81)",
+   "antes": 0.91,
+   "despues": 0.91
+  },
+  {
+   "puerta": "Puerta dorm.2 (arco r=0.81)",
+   "antes": 0.91,
+   "despues": 0.91
+  },
+  {
+   "puerta": "Puerta dorm.3 (arco r=0.81)",
+   "antes": 1.01,
+   "despues": 1.01
+  },
+  {
+   "puerta": "Puerta entrada (arco r=0.91)",
+   "antes": 1.54,
+   "despues": 1.54
+  }
+ ],
+ "APROBADO": true,
+ "restaurado": true
+}

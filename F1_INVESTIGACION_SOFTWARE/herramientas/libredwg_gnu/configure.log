@@ -1,0 +1,361 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+configure: WARNING: Libtool does not cope well with whitespace in `pwd`
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking PACKAGE_VERSION... 0.14
+checking LIBREDWG_SO_VERSION... 0:14:0
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for egrep... (cached) /usr/bin/grep -E
+checking for bash... /bin/bash
+checking for inline... inline
+checking for C/C++ restrict keyword... __restrict__
+checking for ld... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking how to run the C preprocessor... gcc -E
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for PS_open_file in -lps -lm... no
+checking for pcre2_config_8 in -lpcre2-8... yes
+checking for pcre2_config_16 in -lpcre2-16... yes
+checking for newXMLEntity in -lxml2... no
+checking for egrep... (cached) /usr/bin/grep -E
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for stddef.h... yes
+checking for unistd.h... (cached) yes
+checking for malloc.h... yes
+checking for wchar.h... yes
+checking for ctype.h... yes
+checking for wctype.h... yes
+checking for float.h... yes
+checking for limits.h... yes
+checking for sys/param.h... yes
+checking for direct.h... no
+checking for libgen.h... yes
+checking for iconv.h... yes
+checking for sys/time.h... yes
+checking for getopt.h... yes
+checking for alloca.h... yes
+checking for valgrind/valgrind.h... no
+checking for endian.h... yes
+checking for byteswap.h... yes
+checking for mimalloc-override.h... no
+checking whether byte ordering is bigendian... no
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99 or later... yes
+checking for strcasecmp header file... <strings.h>
+checking if le16toh is available in endian.h... yes
+checking if le32toh is available in endian.h... yes
+checking if le64toh is available in endian.h... yes
+checking if htole32 is available in endian.h... yes
+checking if htole64 is available in endian.h... yes
+checking if htobe16 is available in endian.h... yes
+checking if htobe32 is available in endian.h... yes
+checking if htobe64 is available in endian.h... yes
+checking if be64toh is available in endian.h... yes
+checking for pcre2.h... yes
+checking if pointers to integers require aligned access... no
+checking for size_t... yes
+checking for int16_t... yes
+checking for uint16_t... yes
+checking for int32_t... yes
+checking for uint32_t... yes
+checking for int64_t... yes
+checking for uint64_t... yes
+checking size of size_t... 8
+checking size of wchar_t... 4
+configure: WARNING: pslib for dwg2ps missing with release
+checking whether C compiler accepts -Werror=unknown-warning-option... no
+checking whether C compiler accepts -Wsuggest-attribute=format... yes
+checking whether C compiler accepts -mretpoline -DRETPOLINE... no
+checking whether C compiler accepts -mindirect-branch=thunk-extern -mfunction-return=thunk-extern -mindirect-branch-register -DRETPOLINE... yes
+checking whether C compiler accepts -fno-strict-aliasing... yes
+checking whether C compiler accepts -fno-semantic-interposition... yes
+checking whether C compiler accepts -fwrapv... yes
+checking whether C compiler accepts -fno-common... yes
+checking whether C compiler accepts -fvisibility=hidden... yes
+checking whether C compiler accepts -fno-strict-aliasing... (cached) yes
+checking whether C compiler accepts -ftrivial-auto-var-init=zero... yes
+checking whether C compiler accepts -fstrict-flex-arrays=3... yes
+checking whether C compiler accepts -fstack-protector-strong... yes
+checking whether C compiler accepts -fstack-clash-protection... yes
+checking whether C compiler accepts -fcf-protection=full... yes
+checking whether C compiler accepts -fno-delete-null-pointer-checks... yes
+checking whether C compiler accepts -Wno-alloc-size... yes
+checking whether C compiler accepts -Wall... yes
+checking whether C compiler accepts -Wextra... yes
+checking whether C compiler accepts -Wundef... yes
+checking whether C compiler accepts -Wwrite-strings... yes
+checking whether C compiler accepts -Wpointer-arith... yes
+checking whether C compiler accepts -Wmissing-declarations... yes
+checking whether C compiler accepts -Wredundant-decls... yes
+checking whether C compiler accepts -Wno-unused-variable... yes
+checking whether C compiler accepts -Wno-unused-parameter... yes
+checking whether C compiler accepts -Wno-unused-but-set-variable... yes
+checking whether C compiler accepts -Wmissing-field-initializers... yes
+checking whether C compiler accepts -Wcast-align... yes
+checking whether C compiler accepts -Wformat=2... yes
+checking whether C compiler accepts -Wformat-nonliteral... yes
+checking whether C compiler accepts -Wformat-security... yes
+checking whether C compiler accepts -Wformat-y2k... yes
+checking whether C compiler accepts -Wsign-compare... yes
+checking whether C compiler accepts -Wstrict-aliasing... yes
+checking whether C compiler accepts -Wshadow... yes
+checking whether C compiler accepts -Winline... yes
+checking whether C compiler accepts -Wpacked... yes
+checking whether C compiler accepts -Wmissing-format-attribute... yes
+checking whether C compiler accepts -Wmissing-noreturn... yes
+checking whether C compiler accepts -Winit-self... yes
+checking whether C compiler accepts -Wredundant-decls... (cached) yes
+checking whether C compiler accepts -Wmissing-include-dirs... yes
+checking whether C compiler accepts -Warray-bounds... yes
+checking whether C compiler accepts -Wreturn-type... yes
+checking whether C compiler accepts -Wswitch-enum... (cached) no
+checking whether C compiler accepts -Wswitch-default... yes
+checking whether C compiler accepts -Wduplicated-cond... yes
+checking whether C compiler accepts -Wduplicated-branches... yes
+checking whether C compiler accepts -Wlogical-op... yes
+checking whether C compiler accepts -Wrestrict... yes
+checking whether C compiler accepts -Wnull-dereference... yes
+checking whether C compiler accepts -Wdouble-promotion... yes
+checking whether C compiler accepts -Wchar-subscripts... yes
+checking whether C compiler accepts -Wnested-externs... yes
+checking whether C compiler accepts -Wmissing-prototypes... yes
+checking whether C compiler accepts -Wstrict-prototypes... yes
+checking whether C compiler accepts -Wdeclaration-after-statement... yes
+checking whether C compiler accepts -Wimplicit-function-declaration... yes
+checking whether C compiler accepts -Wold-style-definition... yes
+checking whether C compiler accepts -Wjump-misses-init... yes
+checking whether C compiler accepts -Wno-error=alloc-size... no
+checking whether C compiler accepts -Wno-error=unused-variable... yes
+checking whether C compiler accepts -Wno-error=unused-parameter... yes
+checking whether C compiler accepts -Wno-error=unused-but-set-variable... yes
+checking whether C compiler accepts -Werror=unknown-warning-option... (cached) no
+checking whether the linker accepts -Wl,--as-needed... yes
+checking whether the linker accepts -Wl,--as-needed... yes
+checking whether the linker accepts -Wl,-z,relro... yes
+checking whether the linker accepts -Wl,-z,relro... yes
+checking whether the linker accepts -Wl,-z,now... yes
+checking whether the linker accepts -Wl,-z,now... yes
+checking whether the linker accepts -Wl,-z,noexecstack... yes
+checking whether the linker accepts -Wl,-z,noexecstack... yes
+checking whether the linker accepts -Wl,--no-as-needed... yes
+checking whether the linker accepts -Wl,--fatal-warnings... yes
+checking whether the linker accepts -Wl,-fatal_warnings... no
+checking whether the linker accepts -Wl,--no-as-needed... yes
+checking for __attribute__((visibility("default")))... yes
+checking whether C compiler accepts -Werror... yes
+checking for __attribute__((gnu_format))... yes
+checking for __attribute__((ms_format))... no
+checking for __attribute__((format))... yes
+checking for __attribute__((malloc))... yes
+checking for __attribute__((returns_nonnull))... yes
+checking for __attribute__((noreturn))... yes
+checking for __attribute__((aligned))... yes
+checking for __attribute__((counted_by))... no
+checking for printf() modifier to use with size_t... "z"
+checking for GNU libc compatible malloc... (cached) yes
+checking for GNU libc compatible realloc... (cached) yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether stat accepts an empty string... no
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for strtod... yes
+checking for strdup... yes
+checking for getopt_long... yes
+checking for basename... yes
+checking for strcasestr... yes
+checking for scandir... yes
+checking for floor... no
+checking for sqrt... no
+checking for gettimeofday... yes
+checking for floor in -lm... yes
+checking for sincos... yes
+checking for memchr... yes
+checking for memmove... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strstr... yes
+checking for strrchr... yes
+checking for strtol... yes
+checking for strtoll... yes
+checking for strtoul... yes
+checking for strtoull... yes
+checking for strnlen... yes
+checking for memmem... yes
+checking for gmtime_r... yes
+checking for wcslen... yes
+checking for wcsnlen... yes
+checking for wcscpy... yes
+checking for wcscmp... yes
+checking for wcsstr... yes
+checking for sscanf_s... no
+configure: WARNING: No secure sscanf_s found. dwgfuzz -add will produce false positives.
+checking for --enable-debug... no (default)
+checking whether C compiler accepts -Werror... (cached) yes
+checking whether to add -D_FORTIFY_SOURCE=3 to CPPFLAGS... no
+checking whether to add -D_FORTIFY_SOURCE=2 to CPPFLAGS... no
+checking for C restrict usability... restrict
+yes
+checking for --disable-write... no (default)
+checking for --enable-trace... no (default)
+checking for --with-dxf-precision... max (default)
+checking for --with-geojson-precision... max (default)
+checking for --disable-werror... no (default)
+checking for setenv... yes
+checking for --disable-dxf... no (default)
+checking for --disable-json... no (default)
+checking for --disable-bindings... yes
+checking for --disable-docs... yes
+checking for --enable-check-less... no (default)
+checking for --with-mimalloc... no mimalloc headers found
+checking for --enable-gcov... no (default)
+checking for gperf... no
+checking for latest clang-format... echo
+checking for latest clang-tidy... echo
+checking for --disable-python... disabled
+configure: WARNING: disabled swig bindings
+checking for perl... /usr/bin/perl
+checking PERL version... v5.38.2
+checking for ODAFileConverter... no
+checking for TeighaFileConverter... no
+checking for xvfb-run... no
+checking for cppcheck... cppcheck
+checking CPPCHECK version... 2.13.0
+checking for picat... no
+checking for parallel... no
+checking for timeout... timeout
+checking TIMEOUT version... 9.4
+checking for makeinfo... ${SHELL} '/home/jose-angel/Desktop/MAPA SOCIALTECH/F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/build-aux/missing' makeinfo
+checking MAKEINFO version... 
+checking for ./../ODA-spec... no
+checking for doxygen... no
+checking for jq... jq
+checking JQ version... 1.7
+checking for shellcheck... no
+checking for shfmt... no
+checking for rpmlint... no
+checking for geojsonhint... no
+checking for gjv... no
+checking for jing... no
+checking for valgrind... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/codepages/Makefile
+config.status: creating doc/Makefile
+config.status: creating programs/Makefile
+config.status: creating examples/Makefile
+config.status: creating test/Makefile
+config.status: creating test/unit-testing/Makefile
+config.status: creating libredwg.pc
+config.status: creating vcpkg.json
+config.status: creating programs/dwgfilter
+config.status: creating programs/alive.test
+config.status: creating programs/dxf.test
+config.status: creating programs/dxfb.test
+config.status: creating programs/json.test
+config.status: creating programs/svg.test
+config.status: creating programs/dwgfilter.test
+config.status: creating examples/dwgadd_test.sh
+config.status: creating logs-all.sh
+config.status: creating log
+config.status: creating dwg
+config.status: creating dxf
+config.status: creating json
+config.status: creating geojson
+config.status: creating svg
+config.status: creating rw
+config.status: creating dynapi_test_all.sh
+config.status: creating unit_testing_all.sh
+config.status: creating src/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands

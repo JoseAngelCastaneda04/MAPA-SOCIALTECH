@@ -1,0 +1,7 @@
+[sdf2map] model 'suelo' world pose: 5 4 0 0 0 0
+[sdf2map] model 'muros' world pose: 0 0 0 0 0 0
+[sdf2map] model 'mesa1' world pose: 7.5 6 0 0 0 1.5708
+[sdf2map] model 'silla1' world pose: 7.5 5.2 0 0 0 0
+[sdf2map] sampled 98198 points from 3 geometries in 4 models (1 geometries skipped)
+[sdf2map] wrote 61298 points -> pruebas/integrado/mapa.pcd
+[sdf2map] occupancy grid: 203x163 cells (0.05 m/cell), 3582 occupied -> pruebas/integrado/mapa.pgm + pruebas/integrado/mapa.yaml

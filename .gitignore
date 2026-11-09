@@ -1,0 +1,17 @@
+# Se regeneran con RESTAURAR_ENTORNO.sh (no se versionan)
+F0_AUDITORIA_REPOSITORIOS/SocialTech-Gazebo/
+F0_AUDITORIA_REPOSITORIOS/SocialTech-NOVNC/
+F0_AUDITORIA_REPOSITORIOS/SocialTech_ws/
+F0_AUDITORIA_REPOSITORIOS/tracer_ros/
+F0_AUDITORIA_REPOSITORIOS/ugv_sdk/
+F1_INVESTIGACION_SOFTWARE/repos/*/
+F1_INVESTIGACION_SOFTWARE/herramientas/venv/
+F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_gnu/libredwg-0.14/
+F1_INVESTIGACION_SOFTWARE/herramientas/libredwg_src/libredwg-0.13.4.8043/
+F1_INVESTIGACION_SOFTWARE/ws/build/
+F1_INVESTIGACION_SOFTWARE/ws/install/
+F1_INVESTIGACION_SOFTWARE/ws/log/
+F1_INVESTIGACION_SOFTWARE/ws/src/
+F5_INTEGRACION_TRACER/modelos/tracer_agv/meshes/*.dae
+__pycache__/
+*.pyc

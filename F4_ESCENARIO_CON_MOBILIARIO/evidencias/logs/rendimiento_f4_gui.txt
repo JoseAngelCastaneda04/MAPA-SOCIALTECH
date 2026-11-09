@@ -1,0 +1,4 @@
+server: RAM media 156 MB (max 156 MB), CPU media 24.8 %
+gui: RAM media 524 MB (max 524 MB), CPU media 137.5 %
+iterations: 189289
+real_time_factor: 0.99913574757834478

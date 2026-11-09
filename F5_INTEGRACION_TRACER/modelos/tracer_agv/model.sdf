@@ -1,0 +1,335 @@
+<sdf version='1.11'>
+  <model name='tracer_agv'>
+    <link name='base_footprint'>
+      <inertial>
+        <pose>-0.001557742857142858 -9.9127055770103257e-19 0.095065099999999972 0 0 0</pose>
+        <mass>28</mass>
+        <inertia>
+          <ixx>0.80668602836897352</ixx>
+          <ixy>4.3236049661134429e-20</ixy>
+          <ixz>-0.0025146699021599979</ixz>
+          <iyy>1.1345556222314419</iyy>
+          <iyz>1.316582953769797e-18</iyz>
+          <izz>1.852305927195802</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_footprint_fixed_joint_lump__chasis_collision'>
+        <pose>0 0 0.14249999999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tracer_agv/meshes/chasis_colision.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__rueda_loca_collision_1'>
+        <pose>0.16774159999999999 0.17000000000000001 0.037411399999999977 1.5707963267948948 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.052999999999999999</length>
+            <radius>0.037199999999999997</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__rueda_loca_collision_2'>
+        <pose>0.16774159999999999 -0.17000000000000001 0.037411399999999977 1.5707963267948948 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.052999999999999999</length>
+            <radius>0.037199999999999997</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__rueda_loca_collision_3'>
+        <pose>-0.2113584 0.17000000000000001 0.037411399999999977 1.5707963267948948 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.052999999999999999</length>
+            <radius>0.037199999999999997</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__rueda_loca_collision_4'>
+        <pose>-0.2113584 -0.17000000000000001 0.037411399999999977 1.5707963267948948 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.052999999999999999</length>
+            <radius>0.037199999999999997</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='base_footprint_fixed_joint_lump__base_link_visual'>
+        <pose>0 0 0.14249999999999999 1.5707963267948948 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tracer_agv/meshes/tracer_base_link_no_wheel.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__fl_castor_link_visual_1'>
+        <pose>0.16774159999999999 0.17000000000000001 0.037411399999999977 -1.5707963267948948 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tracer_agv/meshes/castor.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__fl_castor_link_visual_2'>
+        <pose>0.18955 0.17000000000000001 0.1044114 -1.5707963267948948 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tracer_agv/meshes/castor_joint.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__fr_castor_link_visual_3'>
+        <pose>0.16774159999999999 -0.17000000000000001 0.037411399999999977 -1.5707963267948948 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tracer_agv/meshes/castor.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__fr_castor_link_visual_4'>
+        <pose>0.18955 -0.17000000000000001 0.1044114 -1.5707963267948948 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tracer_agv/meshes/castor_joint.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__laser_visual_5'>
+        <pose>0.21249999999999999 0 0.20000000000000001 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.070000000000000007</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.25 0.25 0.25 1</diffuse>
+          <ambient>0.25 0.25 0.25 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__rl_castor_link_visual_6'>
+        <pose>-0.2113584 0.17000000000000001 0.037411399999999977 -1.5707963267948948 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tracer_agv/meshes/castor.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__rl_castor_link_visual_7'>
+        <pose>-0.18955 0.17000000000000001 0.1044114 -1.5707963267948948 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tracer_agv/meshes/castor_joint.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__rr_castor_link_visual_8'>
+        <pose>-0.2113584 -0.17000000000000001 0.037411399999999977 -1.5707963267948948 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tracer_agv/meshes/castor.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__rr_castor_link_visual_9'>
+        <pose>-0.18955 -0.17000000000000001 0.1044114 -1.5707963267948948 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tracer_agv/meshes/castor_joint.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <sensor name='lidar' type='gpu_lidar'>
+        <topic>/scan</topic>
+        <update_rate>10</update_rate>
+        <always_on>true</always_on>
+        <visualize>false</visualize>
+        <lidar>
+          <scan>
+            <horizontal>
+              <samples>720</samples>
+              <resolution>1</resolution>
+              <min_angle>-3.1415926535000001</min_angle>
+              <max_angle>3.1415926535000001</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.10000000000000001</min>
+            <max>30</max>
+            <resolution>0.01</resolution>
+          </range>
+        </lidar>
+        <pose>0.21249999999999999 0 0.20000000000000001 0 0 0</pose>
+        <gz_frame_id>laser</gz_frame_id>
+      </sensor>
+    </link>
+    <joint name='left_wheel' type='revolute'>
+      <pose relative_to='base_footprint'>0 0.17000000000000001 0.060499999999999977 0 0 0</pose>
+      <parent>base_footprint</parent>
+      <child>left_wheel_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_wheel_link'>
+      <pose relative_to='left_wheel'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.001508675833333333</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0018301249999999999</iyy>
+          <iyz>0</iyz>
+          <izz>0.001508675833333333</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_wheel_link_fixed_joint_lump__rueda_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.060499999999999998</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name='left_wheel_link_visual'>
+        <pose>0 0 0 3.14159265358979 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tracer_agv/meshes/tracer_wheel.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='right_wheel' type='revolute'>
+      <pose relative_to='base_footprint'>0 -0.17000000000000001 0.060499999999999977 0 0 0</pose>
+      <parent>base_footprint</parent>
+      <child>right_wheel_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_wheel_link'>
+      <pose relative_to='right_wheel'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.001508675833333333</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0018301249999999999</iyy>
+          <iyz>0</iyz>
+          <izz>0.001508675833333333</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_wheel_link_fixed_joint_lump__rueda_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.060499999999999998</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name='right_wheel_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tracer_agv/meshes/tracer_wheel.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <plugin name='gz::sim::systems::DiffDrive' filename='gz-sim-diff-drive-system'>
+      <left_joint>left_wheel</left_joint>
+      <right_joint>right_wheel</right_joint>
+      <wheel_separation>0.34</wheel_separation>
+      <wheel_radius>0.0605</wheel_radius>
+      <max_linear_velocity>1.6</max_linear_velocity>
+      <min_linear_velocity>-1.6</min_linear_velocity>
+      <topic>/cmd_vel_seguro</topic>
+      <odom_topic>/odom</odom_topic>
+      <tf_topic>/tf</tf_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_footprint</child_frame_id>
+      <odom_publisher_frequency>50</odom_publisher_frequency>
+    </plugin>
+    <plugin name='gz::sim::systems::JointStatePublisher' filename='gz-sim-joint-state-publisher-system'>
+      <topic>/joint_states</topic>
+      <joint_name>left_wheel</joint_name>
+      <joint_name>right_wheel</joint_name>
+    </plugin>
+    <frame name='fl_castor_joint' attached_to='base_link'>
+      <pose>0.18955 0.17000000000000001 -0.0380886 0 0 0</pose>
+    </frame>
+    <frame name='fl_castor_link' attached_to='fl_castor_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='fr_castor_joint' attached_to='base_link'>
+      <pose>0.18955 -0.17000000000000001 -0.0380886 0 0 0</pose>
+    </frame>
+    <frame name='fr_castor_link' attached_to='fr_castor_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='laser_joint' attached_to='base_link'>
+      <pose>0.21249999999999999 0 0.057500000000000002 0 0 0</pose>
+    </frame>
+    <frame name='laser' attached_to='laser_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='rl_castor_joint' attached_to='base_link'>
+      <pose>-0.18955 0.17000000000000001 -0.0380886 0 0 0</pose>
+    </frame>
+    <frame name='rl_castor_link' attached_to='rl_castor_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='rr_castor_joint' attached_to='base_link'>
+      <pose>-0.18955 -0.17000000000000001 -0.0380886 0 0 0</pose>
+    </frame>
+    <frame name='rr_castor_link' attached_to='rr_castor_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='base_footprint_joint' attached_to='base_footprint'>
+      <pose>0 0 0.14249999999999999 0 0 0</pose>
+    </frame>
+    <frame name='base_link' attached_to='base_footprint_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+  </model>
+</sdf>

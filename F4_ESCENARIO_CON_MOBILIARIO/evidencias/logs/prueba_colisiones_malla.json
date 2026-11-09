@@ -1,0 +1,88 @@
+[
+ {
+  "bola": "b_mesa1",
+  "prueba": "tablero mesa_1 (h=0.7962)",
+  "xy_ini": [
+   8.9,
+   -4.9
+  ],
+  "z_final": 0.8462,
+  "z_esperado": 0.8462000000000001,
+  "ok": true
+ },
+ {
+  "bola": "b_mesa2",
+  "prueba": "tablero mesa_2 (h=0.7395)",
+  "xy_ini": [
+   8.9,
+   -6.35
+  ],
+  "z_final": 0.78,
+  "z_esperado": 0.7895000000000001,
+  "ok": true
+ },
+ {
+  "bola": "b_caja",
+  "prueba": "caja (h=0.50)",
+  "xy_ini": [
+   10.2,
+   -6.3
+  ],
+  "z_final": 0.55,
+  "z_esperado": 0.55,
+  "ok": true
+ },
+ {
+  "bola": "b_papelera",
+  "prueba": "papelera (h=0.60)",
+  "xy_ini": [
+   7.55,
+   -6.45
+  ],
+  "z_final": 0.65,
+  "z_esperado": 0.65,
+  "ok": true
+ },
+ {
+  "bola": "b_asiento",
+  "prueba": "asiento silla_N (altura segun colision)",
+  "xy_ini": [
+   8.9,
+   -4.1885
+  ],
+  "z_final": 0.4664,
+  "z_esperado": null,
+  "ok": null
+ },
+ {
+  "bola": "b_suelo",
+  "prueba": "control: suelo libre (z=0.05)",
+  "xy_ini": [
+   9.6,
+   -3.4
+  ],
+  "z_final": 0.05,
+  "z_esperado": 0.05,
+  "ok": true
+ },
+ {
+  "bola": "l_caja",
+  "prueba": "bola a -2 m/s contra la caja (para en la cara: x_final = 10.45 +-0.02)",
+  "final_xyz": [
+   10.45,
+   -6.3,
+   0.05
+  ],
+  "ok": true
+ },
+ {
+  "bola": "l_pared",
+  "prueba": "bola lanzada a -2 m/s contra pared sur (no debe atravesar: y_final > -6.90)",
+  "final_xyz": [
+   7.996,
+   -6.78,
+   0.05
+  ],
+  "ok": true
+ }
+]

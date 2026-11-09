@@ -1,0 +1,45 @@
+[INFO] [launch]: All log files can be found below /home/jose-angel/.ros/log/2026-11-08-11-31-19-334845-dellG15-102681
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [map_server-1]: process started with pid [102733]
+[INFO] [lifecycle_manager-2]: process started with pid [102734]
+[INFO] [static_transform_publisher-3]: process started with pid [102735]
+[INFO] [rviz2-4]: process started with pid [102736]
+[static_transform_publisher-3] [INFO] [1794133879.422034320] [tf_map_world]: Spinning until stopped - publishing transform
+[static_transform_publisher-3] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-3] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-3] from 'map' to 'world'
+[lifecycle_manager-2] [INFO] [1794133879.423137268] [lifecycle_manager_mapa]: Creating
+[lifecycle_manager-2] [INFO] [1794133879.425660005] [lifecycle_manager_mapa]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-2] [INFO] [1794133879.433446332] [lifecycle_manager_mapa]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-2] [INFO] [1794133879.433474781] [lifecycle_manager_mapa]: [34m[1mConfiguring map_server[0m[0m
+[map_server-1] [INFO] [1794133879.433850846] [map_server]: 
+[map_server-1] 	map_server lifecycle node launched. 
+[map_server-1] 	Waiting on external lifecycle transitions to activate
+[map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-1] [INFO] [1794133879.433909971] [map_server]: Creating
+[rviz2-4] [INFO] [1794133879.606522435] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-4] [INFO] [1794133879.606688349] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-4] [INFO] [1794133879.622221472] [rviz2]: Stereo is NOT SUPPORTED
+[map_server-1] [INFO] [1794133879.938686435] [map_server]: Configuring
+[map_server-1] [INFO] [1794133879.938750528] [map_io]: Loading yaml file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.yaml
+[map_server-1] [INFO] [1794133879.938954679] [map_io]: resolution: 0.01
+[map_server-1] [INFO] [1794133879.938959755] [map_io]: origin[0]: 4.7299
+[map_server-1] [INFO] [1794133879.938963397] [map_io]: origin[1]: -11.32
+[map_server-1] [INFO] [1794133879.938965409] [map_io]: origin[2]: 0
+[map_server-1] [INFO] [1794133879.938967589] [map_io]: free_thresh: 0.196
+[map_server-1] [INFO] [1794133879.938969490] [map_io]: occupied_thresh: 0.65
+[map_server-1] [INFO] [1794133879.938972537] [map_io]: mode: trinary
+[map_server-1] [INFO] [1794133879.938975448] [map_io]: negate: 0
+[map_server-1] [INFO] [1794133879.939111188] [map_io]: Loading image_file: /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm
+[map_server-1] [INFO] [1794133879.957724611] [map_io]: Read map /home/jose-angel/Desktop/MAPA SOCIALTECH/F3_MAPA_RVIZ2/mapa/piso_1cm.pgm: 1350 X 1179 map @ 0.01 m/cell
+[lifecycle_manager-2] [INFO] [1794133879.964648158] [lifecycle_manager_mapa]: [34m[1mActivating map_server[0m[0m
+[map_server-1] [INFO] [1794133879.964721237] [map_server]: Activating
+[map_server-1] [INFO] [1794133879.966766385] [map_server]: Creating bond (map_server) to lifecycle manager.
+[rviz2-4] [INFO] [1794133879.986552975] [rviz2]: Trying to create a map of size 1350 x 1179 using 1 swatches
+[rviz2-4] [ERROR] [1794133880.018455946] [rviz2]: rviz/glsl120/indexed_8bit_image.vert
+[rviz2-4] rviz/glsl120/indexed_8bit_image.frag
+[rviz2-4]  GLSL link result : 
+[rviz2-4] active samplers with a different type refer to the same texture image unit
+[lifecycle_manager-2] [INFO] [1794133880.069020521] [lifecycle_manager_mapa]: Server map_server connected with bond.
+[lifecycle_manager-2] [INFO] [1794133880.069055178] [lifecycle_manager_mapa]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-2] [INFO] [1794133880.069060135] [lifecycle_manager_mapa]: [34m[1mCreating bond timer...[0m[0m

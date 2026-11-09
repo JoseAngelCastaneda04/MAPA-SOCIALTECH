@@ -1,0 +1,21 @@
+A_avance v=0.10 w=0.00 dur=4.00 | gz fwd 0.3984 lat 0.0000 dyaw 0.00° | esperado 0.4000 / 0.00° | odom-gz fwd -0.0005 dyaw -0.000°
+A_avance v=0.30 w=0.00 dur=4.00 | gz fwd 1.1916 lat 0.0000 dyaw 0.00° | esperado 1.2000 / 0.00° | odom-gz fwd 0.0018 dyaw -0.000°
+A_avance v=0.60 w=0.00 dur=4.00 | gz fwd 2.3742 lat 0.0000 dyaw 0.00° | esperado 2.4000 / 0.00° | odom-gz fwd 0.0132 dyaw -0.000°
+A_avance v=1.00 w=0.00 dur=2.00 | gz fwd 1.9353 lat 0.0000 dyaw 0.00° | esperado 2.0000 / 0.00° | odom-gz fwd 0.0427 dyaw -0.000°
+A_avance v=1.50 w=0.00 dur=2.00 | gz fwd 2.8647 lat 0.0000 dyaw 0.00° | esperado 3.0000 / 0.00° | odom-gz fwd 0.1038 dyaw -0.000°
+A_marcha_atras v=-0.30 w=0.00 dur=4.00 | gz fwd -1.1895 lat -0.0000 dyaw 0.00° | esperado -1.2000 / 0.00° | odom-gz fwd -0.0042 dyaw 0.000°
+B_giro_izq v=0.00 w=0.20 dur=7.85 | gz fwd -0.0001 lat 0.0001 dyaw 89.90° | esperado 0.0000 / 90.00° | odom-gz fwd 0.0001 dyaw -0.075°
+B_giro_izq v=0.00 w=0.50 dur=3.14 | gz fwd -0.0001 lat 0.0001 dyaw 89.52° | esperado 0.0000 / 90.01° | odom-gz fwd 0.0001 dyaw -0.020°
+B_giro_izq v=0.00 w=1.00 dur=1.57 | gz fwd -0.0001 lat 0.0001 dyaw 88.41° | esperado 0.0000 / 90.01° | odom-gz fwd 0.0001 dyaw 1.090°
+B_giro_izq v=0.00 w=1.50 dur=1.05 | gz fwd -0.0001 lat 0.0001 dyaw 87.00° | esperado 0.0000 / 90.07° | odom-gz fwd 0.0001 dyaw 1.604°
+B_giro_der v=0.00 w=-0.50 dur=3.14 | gz fwd -0.0001 lat -0.0001 dyaw -89.49° | esperado 0.0000 / -90.01° | odom-gz fwd 0.0001 dyaw 0.020°
+C_parada_tras_avance v=0.30 w=0.00 dur=3.00 | gz fwd 0.8926 lat 0.0000 dyaw 0.00° | esperado 0.9000 / 0.00° | odom-gz fwd 0.0017 dyaw -0.000°
+C_parada_tras_avance v=1.00 w=0.00 dur=3.00 | gz fwd 2.9383 lat 0.0000 dyaw 0.00° | esperado 3.0000 / 0.00° | odom-gz fwd 0.0427 dyaw -0.000°
+C_parada_tras_giro v=0.00 w=1.00 dur=2.00 | gz fwd -0.0001 lat 0.0001 dyaw 112.93° | esperado 0.0000 / 114.59° | odom-gz fwd 0.0001 dyaw 0.517°
+D_combinado v=0.30 w=0.30 dur=5.00 | gz fwd 1.0019 lat 0.9161 dyaw 85.19° | esperado 0.9975 / 85.94° | odom-gz fwd -0.0048 dyaw 0.428°
+D_combinado v=0.50 w=-0.40 dur=5.00 | gz fwd 1.1648 lat -1.7398 dyaw -113.08° | esperado 1.1366 / -114.59° | odom-gz fwd -0.0243 dyaw -1.078°
+D_combinado v=0.80 w=0.80 dur=5.00 | gz fwd -0.6628 lat 1.7131 dyaw -135.46° | esperado -0.7568 / 229.18° | odom-gz fwd -0.0840 dyaw 3.777°
+D_combinado v=-0.30 w=0.30 dur=5.00 | gz fwd -1.0030 lat -0.9120 dyaw 84.96° | esperado -0.9975 / 85.94° | odom-gz fwd 0.0059 dyaw 0.636°
+E rep 1 {'fwd': 1.1655117396296016e-05, 'lat': -8.889979230383868e-05, 'dist': 8.966055338434566e-05, 'dyaw': 0.00017981211774431571}
+E rep 2 {'fwd': -6.410748383624106e-06, 'lat': -8.889909695068459e-05, 'dist': 8.912994521195083e-05, 'dyaw': 0.00017981216767815056}
+E rep 3 {'fwd': 7.142763289816234e-06, 'lat': -8.890109130626942e-05, 'dist': 8.91875725808254e-05, 'dyaw': 0.0001798118495748291}

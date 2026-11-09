@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- F4: copia de SocialTech-Gazebo/models/chair (original sin modificar). Origen = centro de la huella, z=0 = suelo.
+     Dimensiones medidas de la malla: 0.4806 x 0.5227 x 0.8378 m (X x Y x Z a yaw 0). Colision: malla. -->
+<sdf version="1.9">
+  <model name="silla_malla">
+    <static>true</static>
+    <link name="link">
+      <visual name="vis"><pose>-0.00000 -0.00345 0.00001 1.570796 0 0</pose><geometry><mesh><uri>meshes/silla.obj</uri></mesh></geometry></visual>
+      <collision name="col"><pose>-0.00000 -0.00345 0.00001 1.570796 0 0</pose><geometry><mesh><uri>meshes/silla.obj</uri></mesh></geometry></collision>
+    </link>
+  </model>
+</sdf>

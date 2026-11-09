@@ -1,0 +1,19 @@
+{
+ "C": {
+  "prueba": "C: v=0,3 m/s 10 Hz durante 2 s y se deja de publicar (silencio, sin cero)",
+  "comando": "v=0,3 m/s",
+  "n_ordenes_recibidas": 20,
+  "t_ultima_orden_s": 53.42400000000001,
+  "vel_real_en_ultima_orden_m_s": 0.2999997805726079,
+  "t_watchdog_cero_s": 0.5169999999999959,
+  "t_hasta_parada_s": 0.5659999999999954,
+  "desplazamiento_desde_ultima_orden_hasta_parada_m": 0.16111867263684942,
+  "desplazamiento_posterior_a_la_parada_m": 1.7355924697426417e-08,
+  "vel_real_final_m_s": 0.0,
+  "ultima_orden_en_seguro": [
+   0.0,
+   0.0
+  ],
+  "watchdog_publicando_hasta_el_final": true
+ }
+}

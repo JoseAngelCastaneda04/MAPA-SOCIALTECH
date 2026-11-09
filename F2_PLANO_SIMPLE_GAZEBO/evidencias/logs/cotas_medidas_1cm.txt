@@ -1,0 +1,12 @@
+Dormitorio 1 ancho (cota 2.50)     cota  2.50  medido  2.51  error +0.010 m
+Dormitorio 2 ancho (cota 2.50)     cota  2.50  medido  2.51  error +0.010 m
+Dormitorio 3 ancho (cota 2.90)     cota  2.90  medido  2.91  error +0.010 m
+Dormitorio 1 fondo (cota 4.00)     cota  4.00  medido  4.01  error +0.010 m
+Dormitorio 2 fondo (cota 4.00)     cota  4.00  medido  4.01  error +0.010 m
+Dormitorio 3 lado E (cota 5.75)    cota  5.75  medido  5.76  error +0.010 m
+Puerta WC izq. (arco r=0.81)       cota  0.81  medido  0.91  error +0.100 m
+Puerta WC der. (arco r=0.81)       cota  0.81  medido  0.91  error +0.100 m
+Puerta dorm.1 (arco r=0.81)        cota  0.81  medido  0.91  error +0.100 m
+Puerta dorm.2 (arco r=0.81)        cota  0.81  medido  0.91  error +0.100 m
+Puerta dorm.3 (arco r=0.81)        cota  0.81  medido  1.01  error +0.200 m
+Puerta entrada (arco r=0.91)       cota  0.91  medido  1.54  error +0.630 m

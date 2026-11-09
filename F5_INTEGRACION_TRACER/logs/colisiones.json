@@ -1,0 +1,214 @@
+{
+ "pared": {
+  "descripcion": "pared norte del salon",
+  "inicio": [
+   9.7,
+   -2.7,
+   90
+  ],
+  "v": 0.3,
+  "orden_s": 3.5000000000000004,
+  "prediccion_mapa": {
+   "contacto_en_m": 0.45,
+   "centro_en_contacto": [
+    9.7,
+    -2.25
+   ],
+   "libre_hasta_m": 0.44
+  },
+  "recorrido_real_m": 0.4375404040629789,
+  "deriva_lateral_final_m": -3.820250514466345e-10,
+  "giro_final_deg": -9.680326050727379e-08,
+  "z_max_m": 1.6801258960616037e-05,
+  "z_min_m": -1.1665277046910928e-05,
+  "roll_max_deg": 2.9071966493098493e-08,
+  "pitch_max_deg": 0.05810487889521447,
+  "vel_gz_final_m_s": 0.0,
+  "odom_recorrido_m": 1.0499961526571817,
+  "lidar_min_m": 0.13016119599342346,
+  "esperado_parada_m": 0.44,
+  "diferencia_vs_mapa_m": -0.0024595959370211085,
+  "bloqueado": true
+ },
+ "mesa_1": {
+  "descripcion": "borde norte de mesa_1 (carril x=8,2, entre silla_N y silla_W)",
+  "inicio": [
+   8.2,
+   -2.7,
+   -90
+  ],
+  "v": 0.3,
+  "orden_s": 7.1,
+  "prediccion_mapa": {
+   "contacto_en_m": 1.53,
+   "centro_en_contacto": [
+    8.2,
+    -4.23
+   ],
+   "libre_hasta_m": 1.52
+  },
+  "recorrido_real_m": 1.5134137629180806,
+  "deriva_lateral_final_m": 8.20971606953661e-06,
+  "giro_final_deg": 0.07210870199572976,
+  "z_max_m": 0.0016570000000005124,
+  "z_min_m": -4.447878260287799e-05,
+  "roll_max_deg": 0.025599581958875326,
+  "pitch_max_deg": 0.08465412891911477,
+  "vel_gz_final_m_s": 0.0,
+  "odom_recorrido_m": 2.1299999988650176,
+  "lidar_min_m": 0.22072038054466248,
+  "esperado_parada_m": 1.52,
+  "diferencia_vs_mapa_m": -0.0065862370819194105,
+  "bloqueado": true
+ },
+ "silla_N": {
+  "descripcion": "silla_N de frente: respaldo (z>=0,43) y base estimada (z<=0,04)",
+  "inicio": [
+   8.9,
+   -2.7,
+   -90
+  ],
+  "v": 0.3,
+  "orden_s": 4.833333333333333,
+  "prediccion_mapa": {
+   "contacto_en_m": 0.85,
+   "centro_en_contacto": [
+    8.9,
+    -3.5500000000000003
+   ],
+   "libre_hasta_m": 0.84
+  },
+  "recorrido_real_m": 0.8783585400530112,
+  "deriva_lateral_final_m": 1.593657333204441e-05,
+  "giro_final_deg": 0.004319060544305151,
+  "z_max_m": 0.0018039999535330187,
+  "z_min_m": -4.538190017356239e-05,
+  "roll_max_deg": 1.1371771368025579e-07,
+  "pitch_max_deg": 0.12783212647483733,
+  "vel_gz_final_m_s": 0.0,
+  "odom_recorrido_m": 1.4498999989195065,
+  "lidar_min_m": 0.27034157514572144,
+  "esperado_parada_m": 0.84,
+  "diferencia_vs_mapa_m": 0.0383585400530112,
+  "bloqueado": true
+ },
+ "silla_E_lateral": {
+  "descripcion": "silla_E por el costado (limitacion pendiente de F4)",
+  "inicio": [
+   10.05,
+   -2.7,
+   -90
+  ],
+  "v": 0.3,
+  "orden_s": 7.466666666666668,
+  "prediccion_mapa": {
+   "contacto_en_m": 1.6400000000000001,
+   "centro_en_contacto": [
+    10.05,
+    -4.34
+   ],
+   "libre_hasta_m": 1.6300000000000001
+  },
+  "recorrido_real_m": 1.62835839578689,
+  "deriva_lateral_final_m": 1.592600335688109e-05,
+  "giro_final_deg": 0.004316211661351758,
+  "z_max_m": 0.001470799998849339,
+  "z_min_m": -4.8200002429173486e-05,
+  "roll_max_deg": 1.0190787402324967e-07,
+  "pitch_max_deg": 0.1278358942819577,
+  "vel_gz_final_m_s": 0.0,
+  "odom_recorrido_m": 2.239799998897345,
+  "lidar_min_m": 0.22637638449668884,
+  "esperado_parada_m": 1.6300000000000001,
+  "diferencia_vs_mapa_m": -0.0016416042131102149,
+  "bloqueado": true
+ },
+ "caja": {
+  "descripcion": "caja_1 desde el este",
+  "inicio": [
+   12.5,
+   -6.3,
+   180
+  ],
+  "v": 0.3,
+  "orden_s": 7.866666666666666,
+  "prediccion_mapa": {
+   "contacto_en_m": 1.76,
+   "centro_en_contacto": [
+    10.74,
+    -6.3
+   ],
+   "libre_hasta_m": 1.75
+  },
+  "recorrido_real_m": 1.757540557680299,
+  "deriva_lateral_final_m": -5.7084326223001056e-09,
+  "giro_final_deg": -9.653619569178067e-10,
+  "z_max_m": 0.001990199999871832,
+  "z_min_m": -4.7720061935733476e-05,
+  "roll_max_deg": 8.691755951626012e-08,
+  "pitch_max_deg": 0.1278358942819577,
+  "vel_gz_final_m_s": 0.0,
+  "odom_recorrido_m": 2.3597961527045674,
+  "lidar_min_m": 0.13016241788864136,
+  "esperado_parada_m": 1.75,
+  "diferencia_vs_mapa_m": 0.007540557680298932,
+  "bloqueado": true
+ },
+ "puerta_1.01": {
+  "descripcion": "puerta dorm.3 (hueco 1,01 m): debe pasar",
+  "inicio": [
+   12.2,
+   -6.325,
+   0
+  ],
+  "v": 0.3,
+  "orden_s": 12.0,
+  "prediccion_mapa": {
+   "contacto_en_m": null,
+   "libre_hasta_m": 3.0
+  },
+  "recorrido_real_m": 3.59983140690413,
+  "deriva_lateral_final_m": -9.44036049332908e-09,
+  "giro_final_deg": -2.7111702026837526e-06,
+  "z_max_m": 0.0014708000000006563,
+  "z_min_m": -4.8199999998614694e-05,
+  "roll_max_deg": 4.8749392611218745e-12,
+  "pitch_max_deg": 0.15736456857349648,
+  "vel_gz_final_m_s": 0.0,
+  "odom_recorrido_m": 3.599999999974518,
+  "lidar_min_m": 0.6723317503929138,
+  "esperado_recorrido_libre_m": 3.5999999999999996,
+  "paso_completo": true
+ },
+ "puerta_0.91": {
+  "descripcion": "puerta dorm.1 (hueco 0,91 m): debe pasar",
+  "inicio": [
+   11.675,
+   -8.0,
+   90
+  ],
+  "v": 0.3,
+  "orden_s": 8.266666666666667,
+  "prediccion_mapa": {
+   "contacto_en_m": 1.8800000000000001,
+   "centro_en_contacto": [
+    11.675,
+    -6.12
+   ],
+   "libre_hasta_m": 1.87
+  },
+  "recorrido_real_m": 1.8600124558932025,
+  "deriva_lateral_final_m": -0.017323921353392776,
+  "giro_final_deg": -0.7693892827262273,
+  "z_max_m": 0.0019509999999978709,
+  "z_min_m": -4.677061671792386e-05,
+  "roll_max_deg": 0.001393554176714441,
+  "pitch_max_deg": 0.05978402124344917,
+  "vel_gz_final_m_s": 0.0,
+  "odom_recorrido_m": 2.4806999993277667,
+  "lidar_min_m": 0.21422599256038666,
+  "esperado_parada_m": 1.87,
+  "diferencia_vs_mapa_m": -0.009987544106797586,
+  "bloqueado": true
+ }
+}

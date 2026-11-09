@@ -1,0 +1,134 @@
+[
+ {
+  "nombre": "Dormitorio 1 ancho (cota 2.50)",
+  "punto": [
+   10.9,
+   -9.0
+  ],
+  "eje": "x",
+  "cota_m": 2.5,
+  "medido_m": 2.5,
+  "error_m": 0.0
+ },
+ {
+  "nombre": "Dormitorio 2 ancho (cota 2.50)",
+  "punto": [
+   13.6,
+   -9.0
+  ],
+  "eje": "x",
+  "cota_m": 2.5,
+  "medido_m": 2.5,
+  "error_m": 0.0
+ },
+ {
+  "nombre": "Dormitorio 3 ancho (cota 2.90)",
+  "punto": [
+   16.4,
+   -9.0
+  ],
+  "eje": "x",
+  "cota_m": 2.9,
+  "medido_m": 2.9,
+  "error_m": 0.0
+ },
+ {
+  "nombre": "Dormitorio 1 fondo (cota 4.00)",
+  "punto": [
+   10.9,
+   -9.0
+  ],
+  "eje": "y",
+  "cota_m": 4.0,
+  "medido_m": 4.0,
+  "error_m": 0.0
+ },
+ {
+  "nombre": "Dormitorio 2 fondo (cota 4.00)",
+  "punto": [
+   13.6,
+   -9.0
+  ],
+  "eje": "y",
+  "cota_m": 4.0,
+  "medido_m": 4.0,
+  "error_m": 0.0
+ },
+ {
+  "nombre": "Dormitorio 3 lado E (cota 5.75)",
+  "punto": [
+   17.5,
+   -8.0
+  ],
+  "eje": "y",
+  "cota_m": 5.75,
+  "medido_m": 5.76,
+  "error_m": 0.01
+ },
+ {
+  "nombre": "Puerta WC izq. (arco r=0.81)",
+  "punto": [
+   11.4,
+   -5.72
+  ],
+  "eje": "x",
+  "cota_m": 0.81,
+  "medido_m": 0.9,
+  "error_m": 0.09
+ },
+ {
+  "nombre": "Puerta WC der. (arco r=0.81)",
+  "punto": [
+   16.0,
+   -5.72
+  ],
+  "eje": "x",
+  "cota_m": 0.81,
+  "medido_m": 0.9,
+  "error_m": 0.09
+ },
+ {
+  "nombre": "Puerta dorm.1 (arco r=0.81)",
+  "punto": [
+   11.7,
+   -6.9
+  ],
+  "eje": "x",
+  "cota_m": 0.81,
+  "medido_m": 0.9,
+  "error_m": 0.09
+ },
+ {
+  "nombre": "Puerta dorm.2 (arco r=0.81)",
+  "punto": [
+   12.8,
+   -6.9
+  ],
+  "eje": "x",
+  "cota_m": 0.81,
+  "medido_m": 0.9,
+  "error_m": 0.09
+ },
+ {
+  "nombre": "Puerta dorm.3 (arco r=0.81)",
+  "punto": [
+   13.64,
+   -6.3
+  ],
+  "eje": "y",
+  "cota_m": 0.81,
+  "medido_m": 1.0,
+  "error_m": 0.19
+ },
+ {
+  "nombre": "Puerta entrada (arco r=0.91)",
+  "punto": [
+   5.09,
+   -3.1
+  ],
+  "eje": "y",
+  "cota_m": 0.91,
+  "medido_m": 1.54,
+  "error_m": 0.63
+ }
+]

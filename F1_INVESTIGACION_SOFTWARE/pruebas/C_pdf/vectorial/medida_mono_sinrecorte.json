@@ -1,0 +1,47 @@
+{
+ "mapa": "pruebas/C_pdf/vectorial/mapa_mono_sinrecorte.yaml",
+ "resolucion_m_px": 0.05,
+ "origen_usado": [
+  0.0,
+  -0.1
+ ],
+ "IoU_muros": 0.0777,
+ "area_muros_m2": {
+  "mapa": 68.678,
+  "verdad": 7.915
+ },
+ "dist_mapa_a_verdad_m": {
+  "media": 0.8161,
+  "p95": 1.93,
+  "max": 2.4091
+ },
+ "dist_verdad_a_mapa_m": {
+  "media": 0.1875,
+  "p95": 0.97,
+  "max": 1.2748
+ },
+ "obstaculos_espurios_m2(>12cm de un muro real)": 58.169,
+ "muro_perdido_m2(>12cm de lo ocupado)": 2.097,
+ "espesor_muro_sur_m(verdad 0.20)": 0.0,
+ "espesor_muro_int_NS_m(verdad 0.10)": 1.0,
+ "puertas_libres": {
+  "P1_sur(5.0,0.1)": true,
+  "P2_NS(5.0,2.45)": false,
+  "P3_EO(2.45,4.0)": false
+ },
+ "muros_ocupados": {
+  "sur(2,0.1)": false,
+  "intNS(5,6.5)": true,
+  "intEO(1,4.0)": true
+ },
+ "mobiliario_en_mapa": {
+  "mesa(7.5,6.0)": true,
+  "silla(7.5,5.2)": true
+ },
+ "componentes_libres_habitaciones": {
+  "salon": 0,
+  "cocina": 0,
+  "dormitorio": 0,
+  "alcoba_E": 0
+ }
+}
