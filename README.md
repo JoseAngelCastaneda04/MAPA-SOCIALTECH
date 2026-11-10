@@ -10,7 +10,7 @@ Plano → Gazebo Harmonic → mapa de ocupación RViz2 → mobiliario → AGV Ag
 | F3 Mapa en RViz2 | cerrada | `F3_MAPA_RVIZ2/RESUMEN F3.md` |
 | F4 Escenario con mobiliario | cerrada | `F4_ESCENARIO_CON_MOBILIARIO/RESUMEN F4.md` |
 | F5 TRACER en el piso amueblado | **cerrada y validada en simulación, con limitaciones documentadas** (no implica equivalencia con el robot físico) | `F5_INTEGRACION_TRACER/RESUMEN F5.md` |
-| F5.2 Prueba completa con el plano de la casa de José (ensayo general de todo lo restante: plano, mobiliario/máquinas, TRACER, competición, validación, entrega e instalación en GitHub) | **siguiente** | `PROMPT_COMPANERO_F5_2.md` |
+| F5.2 Prueba completa con el plano de la casa de José (ensayo general de todo lo restante: plano, mobiliario/máquinas, TRACER, competición, validación, entrega e instalación en GitHub) | **en curso** (percepción y localización con AMCL medidas en simulación; navegación sin implementar) | `PROMPT_COMPANERO_F5_2.md`, `F5_2_CASA_JOSE/RESUMEN F5.2.md` |
 | F6–F8 Plano real IQS, competición, validación | sin iniciar (carpetas vacías) | `PLAN_MAPA_SOCIALTECH.md` |
 
 ## Empezar

@@ -1,0 +1,6 @@
+# F5.2: zonas prohibidas SOLO VISUALES (MarkerArray rojo en RViz2). NO afectan al robot: no hay costmap ni navegacion.
+# Coordenadas en el marco del mapa (m). Cada zona: nombre + rectangulo [xmin, ymin, xmax, ymax].
+# AVISO: en el proyecto (F0-F5) NO existia ninguna definicion de zonas prohibidas; las de abajo son un EJEMPLO para probar el mecanismo.
+# Sustituyelas por las reales (editar y relanzar; no hace falta recompilar nada).
+zonas:
+  - {nombre: "EJEMPLO_zona_1", rect: [10.60, -3.60, 11.60, -2.60]}

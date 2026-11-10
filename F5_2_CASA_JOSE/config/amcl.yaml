@@ -1,0 +1,37 @@
+# F5.2: Nav2 AMCL (localizacion con LiDAR 2D + mapa). La pose inicial NO esta aqui: la inyecta el launch desde F5/config/inicio.yaml (unica fuente).
+amcl:
+  ros__parameters:
+    use_sim_time: true
+    global_frame_id: map
+    odom_frame_id: odom
+    base_frame_id: base_footprint
+    scan_topic: /scan
+    map_topic: /map
+    set_initial_pose: true
+    always_reset_initial_pose: false
+    tf_broadcast: true
+    transform_tolerance: 0.5
+    robot_model_type: nav2_amcl::DifferentialMotionModel
+    laser_model_type: likelihood_field
+    max_beams: 90
+    laser_min_range: 0.15
+    laser_max_range: 12.0
+    laser_likelihood_max_dist: 2.0
+    z_hit: 0.5
+    z_rand: 0.5
+    sigma_hit: 0.2
+    min_particles: 500
+    max_particles: 3000
+    update_min_d: 0.05
+    update_min_a: 0.05
+    resample_interval: 1
+    recovery_alpha_slow: 0.0
+    recovery_alpha_fast: 0.0
+    alpha1: 0.2
+    alpha2: 0.2
+    alpha3: 0.2
+    alpha4: 0.2
+    alpha5: 0.2
+    save_pose_rate: 0.5
+    pf_err: 0.05
+    pf_z: 0.99
